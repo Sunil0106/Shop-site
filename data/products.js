@@ -1,10 +1,10 @@
-const products = [
+export const products = [
   {
     id: 8888399612064,
     name: "Hibis Box Tissue",
     description: "soft white facial tissue",
     image: "Images/hibis-tissue.png",
-    priceLaari: 1200,
+    priceCents: 1200,
     category: "households",
   },
   {
@@ -12,7 +12,7 @@ const products = [
     name: "Fatih Dust-Free Erasers",
     description: "Phthalate free, Latex-free",
     image: "Images/fatih-erasers.webp",
-    priceLaari: 400,
+    priceCents: 400,
     category: "stationery",
   },
   {
@@ -20,7 +20,48 @@ const products = [
     name: "Faber-Castell",
     description: "Sphere Mathematical Drawing instrument Box",
     image: "Images/castell-geometry.jpg",
-    priceLaari: 4500,
+    priceCents: 4500,
     category: "stationery",
+  },
+  {
+    id: 9556233132038,
+    name: "Campap",
+    description: "Spiral notebook",
+    image: "Images/campap-nontebook.webp",
+    priceCents: 5000,
+    category: "stationery",
+  },
+  {
+    id: 9556233132098,
+    name: "ARIYA RED RAW RICE 1KG",
+    description: "Grains and Lentils",
+    image: "Images/campap-nontebook.webp",
+    priceCents: 3500,
+    category: "food",
+  },
+
+  {
+    id: 9556233132908,
+    name: "CHOICE VEGETABLE OIL 18L",
+    description: "Oils & Ghee",
+    image: "Images/campap-nontebook.webp",
+    priceCents: 43000,
+    category: "food",
+  },
+  {
+    id: 9556239132908,
+    name: "HAPPY COW SLICE CHEESE REGULAR 200G",
+    description: "Dairy & Cheese",
+    image: "Images/campap-nontebook.webp",
+    priceCents: 3600,
+    category: "food",
+  },
+  {
+    id: 289494890483,
+    name: "KIN YOGURT 200ML",
+    description: "Milk & Nutritional",
+    image: "Images/kin-yogurt.png",
+    priceCents: 28500,
+    category: "drinks",
   },
 ];
