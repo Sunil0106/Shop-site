@@ -1,0 +1,48 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.7rem;
+  margin: 0.5rem 0;
+  max-width: 80%;
+  max-height: fit-content;
+}
+
+.content-grid-container .content-grid {
+  background: var(--cart-clr);
+
+  max-width: 220px;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all ease-out 0.15s;
+}
+
+.content-grid:hover {
+  transform: translateY(-0.5rem);
+}
+.content-grid .image-content {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  overflow: hidden;
+}
+.content-grid .image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-details .product-desc {
+  color: rgba(172, 168, 168, 0.815);
+  font-style: italic;
+  font-size: 0.7rem;
+}
+.product-details h4 {
+  font-size: 0.9rem;
+}

@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap&subset=latin");
+
+:root {
+  --main-bg: #1f91b4;
+  --cart-clr: #14c0cc;
+  --txt-clr: #ffffff;
+  --shop-nclr: #22c55e;
+  --logo-fts: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--logo-fts);
+}
+
+.nav-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--main-bg);
+  padding: 0.5rem;
+  color: var(--txt-clr);
+}
+.left-nav-logo {
+  margin-right: 5rem;
+}
+
+.left-nav-logo .img-content {
+  width: 40px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+
+  font-size: 0.5rem;
+  text-align: center;
+}
+.left-nav-logo .img-content a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--txt-clr);
+  font-weight: bold;
+}
+.left-nav-logo .img-content img {
+  width: 100%;
+}
+.middle-nav-name {
+  min-width: 300px;
+  background: red;
+}
+
+.right-nav-tools {
+  display: flex;
+  justify-content: space-between;
+}
+.right-nav-tools .cart-logo {
+  font-size: 2rem;
+  color: var(--txt-clr);
+  cursor: pointer;
+}
