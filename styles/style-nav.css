@@ -17,24 +17,30 @@ body {
   font-family: var(--logo-fts);
 }
 
-.nav-bar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+nav {
   width: 100%;
+
   background: var(--main-bg);
   padding: 0.5rem;
   color: var(--txt-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
 }
 .left-nav-logo {
-  margin-right: 5rem;
+  margin-right: 1em;
 }
-
 .left-nav-logo .img-content {
   width: 40px;
   border-radius: 50%;
   aspect-ratio: 1;
-
   font-size: 0.5rem;
   text-align: center;
 }
@@ -48,16 +54,91 @@ body {
   width: 100%;
 }
 .middle-nav-name {
-  min-width: 300px;
-  background: red;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+.middle-nav-name .search-bar {
+  width: 100%;
+  max-width: 650px;
+  height: 100%;
+  display: flex;
+}
+.middle-nav-name .search-bar input {
+  width: 90%;
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--cart-clr);
+  border-radius: 0.5rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 1.2rem;
+  color: gray;
+  margin-left: 1rem;
+}
+.search-bar input::placeholder {
+  color: gray;
+}
+.search-bar input:focus {
+  outline: none;
 }
 
+.search-bar .search-icon {
+  display: inline-block;
+  background: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 1rem;
+  background: var(--cart-clr);
+  line-height: 1.8rem;
+  cursor: pointer;
+}
 .right-nav-tools {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
+  max-width: 200px;
+  padding: 0 1rem;
 }
 .right-nav-tools .cart-logo {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: var(--txt-clr);
   cursor: pointer;
+}
+.dark-toggle-btn {
+  width: 60px;
+  height: 28px;
+  background: white;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 3px double var(--cart-clr);
+  position: relative;
+  overflow: hidden;
+  padding: 1px;
+}
+.circle-toggle {
+  height: 100%;
+  aspect-ratio: 1;
+  background: var(--cart-clr);
+  border: 1px double var(--cart-clr);
+  border-radius: 50%;
+  position: relatives;
+  z-index: 99;
+  margin-left: 0px;
+  transition: all 0.25s ease;
+}
+/* checkbox */
+.not-checked {
+  display: none;
+}
+
+/* .not-checked:checked {
+  width: 100px;
+  height: 100px;
+  background: red;
+} */
+.move-toggle-btn {
+  margin-left: 62%;
 }
