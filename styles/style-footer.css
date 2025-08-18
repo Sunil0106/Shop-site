@@ -1,0 +1,62 @@
+footer {
+  padding: 1rem 0;
+  background: #1f91b4;
+  color: #ffffff9f;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.foot-content {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.foot-content h4 {
+  color: #14c0cc;
+}
+/* about us */
+.about-us-box {
+  flex: 1;
+  width: 100%;
+  max-width: 220px;
+  min-width: 150px;
+}
+/* contact info */
+.contact-info-box {
+  flex: 1;
+}
+.contact-info-box a {
+  text-decoration: none;
+  color: inherit;
+}
+.contact-info-box p i {
+  color: rgba(2, 32, 61, 0.795);
+}
+/* what with us */
+.social-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 150px;
+  min-width: 100px;
+}
+.social-links a {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 0.5rem;
+}
+.social-links a span {
+  color: rgba(2, 32, 61, 0.795);
+}
+/* faq */
+.faq-section {
+  width: 100%;
+  max-width: 250px;
+}
+.faq-section details p {
+  font-style: italic;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+}
