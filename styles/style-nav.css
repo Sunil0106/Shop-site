@@ -103,9 +103,19 @@ nav {
   padding: 0 1rem;
 }
 .right-nav-tools .cart-logo {
+  position: relative;
   font-size: 2.4rem;
   color: var(--txt-clr);
   cursor: pointer;
+}
+.right-nav-tools .cart-logo .cart-quantity {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+
+  color: var(--cart-clr);
+  font-size: 1rem;
 }
 .dark-toggle-btn {
   width: 60px;
