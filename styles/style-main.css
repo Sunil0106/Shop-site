@@ -40,7 +40,7 @@ main {
   object-fit: cover;
 }
 .product-details .product-desc {
-  color: rgba(172, 168, 168, 0.815);
+  color: rgba(236, 226, 226, 0.815);
   font-style: italic;
   font-size: 0.7rem;
 }
