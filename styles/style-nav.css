@@ -43,12 +43,16 @@ nav {
 .left-nav-logo {
   margin-right: 1em;
 }
+
 .left-nav-logo .img-content {
   width: 40px;
   border-radius: 50%;
   aspect-ratio: 1;
   font-size: 0.5rem;
   text-align: center;
+}
+.left-nav-logo .img-content :hover {
+  filter: drop-shadow(2px 2px 5px rgba(37, 35, 35, 0.527));
 }
 .left-nav-logo .img-content a {
   text-decoration: none;
@@ -99,6 +103,13 @@ nav {
   background: var(--cart-clr);
   line-height: 1.8rem;
   cursor: pointer;
+  transition: opacity 0.15s ease-out;
+}
+.search-bar .search-icon:hover {
+  opacity: 0.7;
+}
+.search-bar .search-icon:active {
+  opacity: 1;
 }
 .right-nav-tools {
   display: flex;
@@ -108,13 +119,18 @@ nav {
   max-width: 200px;
   padding: 0 1rem;
 }
+
 .right-nav-tools .cart-logo {
   position: relative;
   font-size: 2.4rem;
-  color: var(--txt-clr);
   cursor: pointer;
 }
-
+.right-nav-tools .cart-logo:hover {
+  filter: drop-shadow(2px 2px 5px rgba(37, 35, 35, 0.527));
+}
+.right-nav-tools .cart-logo a {
+  color: var(--txt-clr);
+}
 .right-nav-tools .cart-logo .cart-quantity {
   position: absolute;
   top: 20px;
@@ -134,6 +150,10 @@ nav {
   position: relative;
   overflow: hidden;
   padding: 1px;
+  transition: all 0.15s ease;
+}
+.dark-toggle-btn:hover {
+  filter: drop-shadow(2px 2px 5px rgba(37, 35, 35, 0.527));
 }
 .circle-toggle {
   height: 100%;

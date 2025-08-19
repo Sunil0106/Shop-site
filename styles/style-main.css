@@ -64,6 +64,10 @@ main {
   cursor: pointer;
   outline: none;
   color: var(--cart-clr);
+  transition: all 0.15s ease-out;
+}
+.product-details .product-price-quantity-box select:hover {
+  filter: drop-shadow(2px 2px 5px rgba(37, 35, 35, 0.527));
 }
 .product-price-quantity-box select option {
   background: var(--cart-clr);
