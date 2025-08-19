@@ -10,12 +10,11 @@ main {
   margin: 0.5rem auto;
   width: 100%;
   max-width: 1000px;
-  max-height: fit-content;
+  height: max-content;
 }
 
 .content-grid-container .content-grid {
   background: var(--cart-clr);
-
   max-width: 220px;
   color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -46,4 +45,44 @@ main {
 }
 .product-details h4 {
   font-size: 0.9rem;
+}
+.product-details .product-price {
+  flex: 1;
+}
+.product-price-quantity-box {
+  margin-top: 0.5rem;
+}
+.product-details .product-price-quantity-box {
+  display: flex;
+  justify-content: space-between;
+}
+.product-details .product-price-quantity-box select {
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1px 5px;
+  cursor: pointer;
+  outline: none;
+  color: var(--cart-clr);
+}
+.product-price-quantity-box select option {
+  background: var(--cart-clr);
+  color: white;
+}
+
+.product-price-quantity-box .add-to-cart-btn {
+  padding: 0 5px;
+  border: none;
+  border-radius: 0.3rem;
+  color: var(--cart-clr);
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+.product-price-quantity-box .add-to-cart-btn:hover {
+  background: #1f91b4;
+  color: white;
+}
+.product-price-quantity-box .add-to-cart-btn:active {
+  background: var(--cart-clr);
+  opacity: 0.6;
 }

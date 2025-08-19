@@ -33,6 +33,9 @@ footer {
 .contact-info-box p i {
   color: rgba(2, 32, 61, 0.795);
 }
+.contact-info-box .location-map {
+  margin-top: 0.5rem;
+}
 /* what with us */
 .social-links {
   flex: 1;
@@ -59,4 +62,7 @@ footer {
   font-style: italic;
   font-size: 0.8rem;
   line-height: 0.9rem;
+}
+.faq-section details summary {
+  cursor: pointer;
 }

@@ -10,7 +10,16 @@ products.forEach((product, index) => {
           <div class="product-details">
             <h4 class="product-name">${product.name}</h4>
             <p class="product-desc">${product.description}
-              <p class="product-price">$${product.priceCents}</p>
+            <div class="product-price-quantity-box">
+            <p class="product-price">MVR${product.priceCents}</p>
+            <select>
+          
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            </select>
+            <button class="add-to-cart-btn">Add</button>
+            </div>
             </p>
           </div>
         </div>`;
