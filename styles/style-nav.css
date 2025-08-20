@@ -65,17 +65,17 @@ nav {
 }
 .middle-nav-name {
   width: 100%;
-  max-width: 550px;
   text-align: center;
+  padding-left: 3rem;
 }
 .middle-nav-name .search-bar {
   width: 100%;
-  /* max-width: 650px; */
-  /* height: 100%; */
+  max-width: 650px;
+  height: 100%;
   display: flex;
 }
 .middle-nav-name .search-bar input {
-  width: 90%;
+  width: 95%;
   padding: 0.4rem 1rem;
   border: 2px solid var(--cart-clr);
   border-radius: 0.5rem;

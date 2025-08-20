@@ -19,6 +19,7 @@
   .middle-nav-name {
     width: 100%;
     text-align: center;
+    padding-left: 0rem;
   }
   .middle-nav-name .search-bar {
     width: 100%;
@@ -49,8 +50,67 @@
     margin: 0 auto;
     max-width: 300px;
   }
+  .content-grid:hover {
+    transform: translateY(0rem);
+  }
+
+  .product-price-quantity-box .add-to-cart-btn:hover,
+  .product-price-quantity-box .add-to-cart-btn:active {
+    background: #22c55e; /* your hover/click color */
+    color: inherit;
+  }
+  .foot-content {
+    padding: 0 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 765px) {
+  body {
+    padding-top: 72px;
+  }
+  /*media Queries for navbar */
+  .left-nav-logo {
+    margin: 0;
+  }
+  .left-nav-logo .img-content a span {
+    display: none;
+  }
+  .middle-nav-name {
+    display: block;
+    padding-left: 0.5rem;
+  }
+  .middle-nav-name .search-bar input {
+    margin: 0;
+  }
+
+  .right-nav-tools {
+    max-width: 100px;
+  }
+  /* media query for main content */
+  .content-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .content-grid .image-content {
+    height: 60%;
+  }
+  .product-price-quantity-box .add-to-cart-btn:hover,
+  .product-price-quantity-box .add-to-cart-btn:active {
+    background: none;
+    color: inherit;
+  }
+  /* media query for footer */
 
   .foot-content {
     padding: 0 0.5rem;
+    flex-direction: column;
+  }
+  .location-map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
+  body .faq-section {
+    max-width: none;
   }
 }

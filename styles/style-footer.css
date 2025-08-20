@@ -7,6 +7,7 @@ footer {
 }
 .foot-content {
   display: flex;
+  justify-content: space-between;
   gap: 0.5rem;
   width: 100%;
   max-width: 1000px;
@@ -19,12 +20,11 @@ footer {
 .about-us-box {
   flex: 1;
   width: 100%;
-  max-width: 220px;
-  min-width: 150px;
 }
 /* contact info */
 .contact-info-box {
   flex: 1;
+  width: 100%;
 }
 .contact-info-box a {
   text-decoration: none;
@@ -36,13 +36,18 @@ footer {
 .contact-info-box .location-map {
   margin-top: 0.5rem;
 }
+.location-map iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
 /* what with us */
 .social-links {
   flex: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 150px;
+  max-width: 130px;
   min-width: 100px;
 }
 .social-links a {
@@ -56,12 +61,13 @@ footer {
 /* faq */
 .faq-section {
   width: 100%;
-  max-width: 250px;
+  max-width: 300px;
 }
 .faq-section details p {
   font-style: italic;
   font-size: 0.8rem;
   line-height: 0.9rem;
+  width: 100%;
 }
 .faq-section details summary {
   cursor: pointer;
