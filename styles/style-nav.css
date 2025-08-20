@@ -70,8 +70,8 @@ nav {
 }
 .middle-nav-name .search-bar {
   width: 100%;
-  max-width: 650px;
-  height: 100%;
+  /* max-width: 650px; */
+  /* height: 100%; */
   display: flex;
 }
 .middle-nav-name .search-bar input {
@@ -116,8 +116,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 200px;
-  padding: 0 1rem;
+  max-width: 150px;
 }
 
 .right-nav-tools .cart-logo {

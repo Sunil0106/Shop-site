@@ -20,7 +20,7 @@ products.forEach((product, index) => {
             </select>
             <button class="add-to-cart-btn">Add</button>
             </div>
-            </p>
+           
           </div>
         </div>`;
 });
