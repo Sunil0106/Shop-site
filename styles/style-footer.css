@@ -61,7 +61,7 @@ footer {
 /* faq */
 .faq-section {
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
 }
 .faq-section details p {
   font-style: italic;
