@@ -1,26 +1,30 @@
-body {
-  margin-top: 0.5rem;
-}
 .cart-content {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  gap: 0.5rem;
 }
 .cart-items-section {
   flex: 2;
+  padding: 0.5rem;
+  background: var(--main-bg);
+  color: var(--txt-clr);
+  border-radius: 0.3rem;
 }
 .cart-items-content {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.5rem;
-  border: 1px solid rgba(128, 128, 128, 0.418);
-  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.514);
+  border: 2px solid rgba(255, 255, 255, 0.575);
+  box-shadow: 0px 0px 2px 1px rgba(128, 128, 128, 0.514);
   border-radius: 0.5rem;
 }
-
+.cart-items-content legend {
+  font-weight: bold;
+}
 .cart-product {
   display: flex;
   align-items: center;
@@ -57,6 +61,7 @@ body {
   outline: none;
   cursor: pointer;
   transition: all ease-in 0.15s;
+  border-radius: 0.3rem;
 }
 .product-quantity-unit-content .product-cart-quantity:focus {
   border: 2px solid var(--main-bg);
@@ -79,4 +84,74 @@ body {
 }
 .cart-content .remove-cart-item:active {
   background: #5ae4ee;
+}
+/* Checkout */
+.cart-checkout {
+  flex: 1;
+  width: 100%;
+  background: var(--main-bg);
+  height: max-content;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  max-width: max-content;
+}
+.cart-checkout fieldset {
+  border: 2px solid rgba(255, 255, 255, 0.575);
+  box-shadow: 0px 0px 2px 1px rgba(128, 128, 128, 0.514);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.cart-checkout fieldset legend {
+  font-weight: bold;
+}
+fieldset .card-date-time,
+fieldset .delivery-methods-content,
+fieldset .payment-methods-content {
+  margin-bottom: 0.5rem;
+}
+fieldset .card-date-time .order-date,
+fieldset .card-date-time .order-time,
+fieldset .delivery-methods-content select,
+fieldset .payment-methods-content select {
+  font-size: 1rem;
+  height: 30px;
+  padding: 0 0.5rem;
+  border: 2px solid var(--main-bg);
+  outline: none;
+  border-radius: 0.3rem;
+  color: var(--cart-clr);
+  cursor: pointer;
+}
+fieldset .card-date-time .order-date:focus,
+fieldset .card-date-time .order-time:focus,
+fieldset .delivery-methods-content select:focus,
+fieldset .payment-methods-content select:focus {
+  border: 2px solid var(--cart-clr);
+}
+
+fieldset .delivery-methods-content select,
+fieldset .payment-methods-content select {
+  width: 100%;
+}
+fieldset .checkout-btn {
+  height: 30px;
+  width: 100%;
+  border-radius: 0.3rem;
+  border: 2px solid var(--cart-clr);
+  background-color: var(--cart-clr);
+  color: var(--txt-clr);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in 0.15s;
+}
+
+fieldset .checkout-btn:hover {
+  background: var(--txt-clr);
+  color: var(--cart-clr);
+}
+fieldset .checkout-btn:active {
+  background: var(--main-bg);
+  color: var(--txt-clr);
 }
