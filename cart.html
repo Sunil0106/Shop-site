@@ -61,41 +61,178 @@
       <!-- contains whole content -->
       <div class="cart-content">
         <!-- contains products&quantity -->
-        <section class="cart-items-content">
-          <!-- contains a single product -->
-          <div class="cart-product">
-            <div class="product-image-name-content">
-              <div class="image-content">
-                <img src="Images/fatih-erasers.webp" alt="eraser" />
+
+        <section class="cart-items-section">
+          <fieldset class="cart-items-content">
+            <!-- contains a single product -->
+            <legend>CHECKOUT ITEMS (5)</legend>
+            <div class="cart-product">
+              <div class="product-image-name-content">
+                <div class="image-content">
+                  <img src="Images/fatih-erasers.webp" alt="eraser" />
+                </div>
+                <div class="product-name-content">fatih-erasers</div>
               </div>
-              <div class="product-name-content">fatih-erasers</div>
+              <div class="product-unit-price-content">
+                <h4>Unit Price</h4>
+                <p class="product-unit-price">MVR 100</p>
+              </div>
+              <div class="product-quantity-unit-content">
+                <input
+                  type="number"
+                  value="01"
+                  placeholder="100"
+                  class="product-cart-quantity"
+                  min="01"
+                />
+                <select name="product-unit" class="product-cart-unit">
+                  <option value="kg">kg</option>
+                  <option value="grams">grams</option>
+                </select>
+              </div>
+              <div class="total-unit-price-content">
+                <h4>Total Price</h4>
+                <p class="total-unit-price">MVR 100</p>
+              </div>
+              <button class="remove-cart-item">Remove</button>
             </div>
-            <div class="product-unit-price-content">
-              <h4>Unit Price</h4>
-              <p class="product-unit-price">MVR 100</p>
+            <!-- contains a single product -->
+            <div class="cart-product">
+              <div class="product-image-name-content">
+                <div class="image-content">
+                  <img src="Images/fatih-erasers.webp" alt="eraser" />
+                </div>
+                <div class="product-name-content">fatih-erasers</div>
+              </div>
+              <div class="product-unit-price-content">
+                <h4>Unit Price</h4>
+                <p class="product-unit-price">MVR 100</p>
+              </div>
+              <div class="product-quantity-unit-content">
+                <input
+                  type="number"
+                  value="01"
+                  placeholder="100"
+                  class="product-cart-quantity"
+                  min="01"
+                />
+                <select name="product-unit" class="product-cart-unit">
+                  <option value="kg">kg</option>
+                  <option value="grams">grams</option>
+                </select>
+              </div>
+              <div class="total-unit-price-content">
+                <h4>Total Price</h4>
+                <p class="total-unit-price">MVR 100</p>
+              </div>
+              <button class="remove-cart-item">Remove</button>
             </div>
-            <div class="product-quantity-unit-content">
-              <input
-                type="number"
-                value="01"
-                placeholder="100"
-                class="product-cart-quantity"
-                min="01"
-              />
-              <select name="product-unit" class="product-cart-unit">
-                <option value="kg">kg</option>
-                <option value="grams">grams</option>
-              </select>
+            <!-- contains a single product -->
+            <div class="cart-product">
+              <div class="product-image-name-content">
+                <div class="image-content">
+                  <img src="Images/fatih-erasers.webp" alt="eraser" />
+                </div>
+                <div class="product-name-content">fatih-erasers</div>
+              </div>
+              <div class="product-unit-price-content">
+                <h4>Unit Price</h4>
+                <p class="product-unit-price">MVR 100</p>
+              </div>
+              <div class="product-quantity-unit-content">
+                <input
+                  type="number"
+                  value="01"
+                  placeholder="100"
+                  class="product-cart-quantity"
+                  min="01"
+                />
+                <select name="product-unit" class="product-cart-unit">
+                  <option value="kg">kg</option>
+                  <option value="grams">grams</option>
+                </select>
+              </div>
+              <div class="total-unit-price-content">
+                <h4>Total Price</h4>
+                <p class="total-unit-price">MVR 100</p>
+              </div>
+              <button class="remove-cart-item">Remove</button>
             </div>
-            <div class="total-unit-price-content">
-              <h4>Total Price</h4>
-              <p class="total-unit-price">MVR 100</p>
+            <!-- contains a single product -->
+            <div class="cart-product">
+              <div class="product-image-name-content">
+                <div class="image-content">
+                  <img src="Images/fatih-erasers.webp" alt="eraser" />
+                </div>
+                <div class="product-name-content">fatih-erasers</div>
+              </div>
+              <div class="product-unit-price-content">
+                <h4>Unit Price</h4>
+                <p class="product-unit-price">MVR 100</p>
+              </div>
+              <div class="product-quantity-unit-content">
+                <input
+                  type="number"
+                  value="01"
+                  placeholder="100"
+                  class="product-cart-quantity"
+                  min="01"
+                />
+                <select name="product-unit" class="product-cart-unit">
+                  <option value="kg">kg</option>
+                  <option value="grams">grams</option>
+                </select>
+              </div>
+              <div class="total-unit-price-content">
+                <h4>Total Price</h4>
+                <p class="total-unit-price">MVR 100</p>
+              </div>
+              <button class="remove-cart-item">Remove</button>
             </div>
-            <button class="remove-cart-item">Remove</button>
-          </div>
+          </fieldset>
         </section>
         <!-- content checkout details -->
-        <div class="cart-checkout"></div>
+        <section class="cart-checkout">
+          <fieldset>
+            <legend>ORDER SUMMARY</legend>
+            <div class="card-date-time">
+              <h5>Order placed date-time</h5>
+              <input
+                type="date"
+                class="order-date-time"
+                min="2025-08-22"
+                max="2025-08-25"
+              />
+              <input type="time" class="order-time" value="18:00" />
+            </div>
+            <div class="delivery-methods-content">
+              <h5>Delivery Methods</h5>
+              <select class="delivery-method">
+                <option value="">Select a delivery method</option>
+                <option value="Self Receive from shop">
+                  Self Receive from shop
+                </option>
+                <option value="Home delivery">Home delivery</option>
+              </select>
+            </div>
+            <div class="payment-methods-content">
+              <h5>Payment Methods</h5>
+              <select class="payment-methods">
+                <option value="">Select a payment method</option>
+                <option value="cash payment on delivery">
+                  Cash payment on delivery
+                </option>
+                <option value="bank transfer">Bank transfer</option>
+                <option value="credit">Credit</option>
+                <option value="card payment">Card Payment</option>
+              </select>
+            </div>
+            <div class="total-bill-amount">
+              <h5>Total Amount: MVR 1000</h5>
+              <button class="checkout-btn">Checkout</button>
+            </div>
+          </fieldset>
+        </section>
       </div>
     </main>
     <!-- copy paste footer -->
