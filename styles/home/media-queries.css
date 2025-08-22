@@ -68,6 +68,18 @@
     height: 150px;
     border: 0;
   }
+
+  /* cart-page */
+  .cart-content {
+    flex-direction: column;
+  }
+  .payment-with-suggestion {
+    flex-direction: row;
+  }
+  .cart-checkout {
+    flex: 1;
+    max-width: none;
+  }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 765px) {
@@ -82,6 +94,7 @@
   .left-nav-logo .img-content a span {
     display: none;
   }
+
   .middle-nav-name {
     display: block;
     padding-left: 0.5rem;
@@ -119,5 +132,24 @@
   }
   body .faq-section {
     max-width: none;
+  }
+  /* cart */
+  /* cart-page */
+  .cart-content {
+    flex-direction: column;
+  }
+  .payment-with-suggestion {
+    flex-direction: column;
+  }
+  .cart-checkout {
+    flex: 1;
+    max-width: none;
+  }
+  .feedback-box {
+    width: 100%;
+    max-width: none;
+  }
+  .product-name-content {
+    display: none;
   }
 }

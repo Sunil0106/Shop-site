@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="styles/home/style-nav.css" />
     <!-- adding footer css -->
     <link rel="stylesheet" href="styles/home/style-footer.css" />
+    <!-- adding media query -->
+    <link rel="stylesheet" href="styles/home/media-queries.css" />
+
     <title>Cart</title>
   </head>
   <body>
@@ -94,7 +97,9 @@
                 <h4>Total Price</h4>
                 <p class="total-unit-price">MVR 100</p>
               </div>
-              <button class="remove-cart-item">Remove</button>
+              <button class="remove-cart-item">
+                <i class="fa-solid fa-delete-left"></i>
+              </button>
             </div>
             <!-- contains a single product -->
             <div class="cart-product">
@@ -192,46 +197,60 @@
           </fieldset>
         </section>
         <!-- content checkout details -->
-        <section class="cart-checkout">
-          <fieldset>
-            <legend>ORDER SUMMARY</legend>
-            <div class="card-date-time">
-              <h4>Order placed date-time</h4>
-              <input
-                type="date"
-                class="order-date"
-                min="2025-08-22"
-                max="2025-08-25"
-              />
-              <input type="time" class="order-time" value="18:00" />
-            </div>
-            <div class="delivery-methods-content">
-              <h4>Delivery Methods</h4>
-              <select class="delivery-method">
-                <option value="">Select a delivery method</option>
-                <option value="Self Receive from shop">
-                  Self Receive from shop
-                </option>
-                <option value="Home delivery">Home delivery</option>
-              </select>
-            </div>
-            <div class="payment-methods-content">
-              <h4>Payment Methods</h4>
-              <select class="payment-methods">
-                <option value="">Select a payment method</option>
-                <option value="cash payment on delivery">
-                  Cash payment on delivery
-                </option>
-                <option value="bank transfer">Bank transfer</option>
-                <option value="credit">Credit</option>
-                <option value="card payment">Card Payment</option>
-              </select>
-            </div>
-            <div class="total-bill-amount">
-              <h4>Total Amount: MVR 1000</h4>
-              <button class="checkout-btn">Checkout</button>
-            </div>
-          </fieldset>
+        <section class="payment-with-suggestion">
+          <div class="cart-checkout">
+            <fieldset>
+              <legend>ORDER SUMMARY</legend>
+              <div class="card-date-time">
+                <h4>Order placed date-time</h4>
+                <input
+                  type="date"
+                  class="order-date"
+                  min="2025-08-22"
+                  max="2025-08-25"
+                />
+                <input type="time" class="order-time" value="18:00" />
+              </div>
+              <div class="delivery-methods-content">
+                <h4>Delivery Methods</h4>
+                <select class="delivery-method">
+                  <option value="">Select a delivery method</option>
+                  <option value="Self Receive from shop">
+                    Self Receive from shop
+                  </option>
+                  <option value="Home delivery">Home delivery</option>
+                </select>
+              </div>
+              <div class="payment-methods-content">
+                <h4>Payment Methods</h4>
+                <select class="payment-methods">
+                  <option value="">Select a payment method</option>
+                  <option value="cash payment on delivery">
+                    Cash payment on delivery
+                  </option>
+                  <option value="bank transfer">Bank transfer</option>
+                  <option value="credit">Credit</option>
+                  <option value="card payment">Card Payment</option>
+                </select>
+              </div>
+              <div class="total-bill-amount">
+                <h4>Total Amount: MVR 1000</h4>
+                <button class="checkout-btn">Checkout</button>
+              </div>
+            </fieldset>
+          </div>
+          <div class="feedback-box">
+            <fieldset>
+              <legend>Suggestion-here</legend>
+              <textarea
+                class="suggestion-box"
+                placeholder="Type your suggestions here"
+              ></textarea>
+              <button class="send-feedback">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </fieldset>
+          </div>
         </section>
       </div>
     </main>

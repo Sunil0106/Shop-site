@@ -36,7 +36,7 @@
 }
 .cart-product .product-image-name-content {
   width: 100%;
-  max-width: 150px;
+  max-width: 3rem;
   text-align: center;
 }
 .cart-product .product-image-name-content img {
@@ -74,10 +74,13 @@
   font-weight: bold;
   color: var(--cart-clr);
   padding: 0.5rem;
+  padding-top: 0.6rem;
+  border-radius: 50%;
   border: 2px solid var(--cart-clr);
-  border-radius: 0.3rem;
+  aspect-ratio: 1;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
+  line-height: 1.2rem;
 }
 .cart-content .remove-cart-item:hover {
   background: var(--main-bg);
@@ -86,7 +89,14 @@
   background: #5ae4ee;
 }
 /* Checkout */
-.cart-checkout {
+.payment-with-suggestion {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  gap: 0.5rem;
+}
+.cart-checkout,
+.feedback-box {
   flex: 1;
   width: 100%;
   background: var(--main-bg);
@@ -96,13 +106,15 @@
   border-radius: 0.3rem;
   max-width: max-content;
 }
-.cart-checkout fieldset {
+.cart-checkout fieldset,
+.feedback-box fieldset {
   border: 2px solid rgba(255, 255, 255, 0.575);
   box-shadow: 0px 0px 2px 1px rgba(128, 128, 128, 0.514);
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
-.cart-checkout fieldset legend {
+.cart-checkout fieldset legend,
+.feedback-box legend {
   font-weight: bold;
 }
 fieldset .card-date-time,
@@ -113,7 +125,8 @@ fieldset .payment-methods-content {
 fieldset .card-date-time .order-date,
 fieldset .card-date-time .order-time,
 fieldset .delivery-methods-content select,
-fieldset .payment-methods-content select {
+fieldset .payment-methods-content select,
+.feedback-box textarea {
   font-size: 1rem;
   height: 30px;
   padding: 0 0.5rem;
@@ -134,7 +147,8 @@ fieldset .delivery-methods-content select,
 fieldset .payment-methods-content select {
   width: 100%;
 }
-fieldset .checkout-btn {
+fieldset .checkout-btn,
+.feedback-box .send-feedback {
   height: 30px;
   width: 100%;
   border-radius: 0.3rem;
@@ -147,11 +161,25 @@ fieldset .checkout-btn {
   transition: all ease-in 0.15s;
 }
 
-fieldset .checkout-btn:hover {
+fieldset .checkout-btn:hover,
+.feedback-box .send-feedback:hover {
   background: var(--txt-clr);
   color: var(--cart-clr);
 }
-fieldset .checkout-btn:active {
+fieldset .checkout-btn:active,
+.feedback-box .send-feedback:active {
   background: var(--main-bg);
   color: var(--txt-clr);
+}
+
+.feedback-box .suggestion-box {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  resize: none;
+  cursor: text;
+  padding: 0.5rem;
+}
+.feedback-box .send-feedback {
+  width: 50px;
 }
