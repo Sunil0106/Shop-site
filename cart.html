@@ -66,40 +66,9 @@
         <!-- contains products&quantity -->
 
         <section class="cart-items-section">
-          <fieldset class="cart-items-content">
+          <fieldset class="cart-items-content js-cart-items-content">
             <!-- contains a single product -->
             <legend>CHECKOUT ITEMS (5)</legend>
-            <div class="cart-product">
-              <div class="product-image-name-content">
-                <div class="image-content">
-                  <img src="Images/fatih-erasers.webp" alt="eraser" />
-                </div>
-              </div>
-              <div class="product-unit-price-content">
-                <h4>Unit Price</h4>
-                <p class="product-unit-price">MVR 100</p>
-              </div>
-              <div class="product-quantity-unit-content">
-                <input
-                  type="number"
-                  value="01"
-                  placeholder="100"
-                  class="product-cart-quantity"
-                  min="01"
-                />
-                <select name="product-unit" class="product-cart-unit">
-                  <option value="kg">kg</option>
-                  <option value="grams">gms</option>
-                </select>
-              </div>
-              <div class="total-unit-price-content">
-                <h4>Total Price</h4>
-                <p class="total-unit-price">MVR 100</p>
-              </div>
-              <button class="remove-cart-item">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
           </fieldset>
         </section>
         <!-- content checkout details -->
@@ -242,6 +211,6 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="src/app.js"></script>
+    <script type="module" src="src/checkout.js"></script>
   </body>
 </html>

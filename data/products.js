@@ -6,6 +6,7 @@ export const products = [
     image: "Images/hibis-tissue.png",
     priceCents: 1200,
     category: "households",
+    unit: ["pcs"],
   },
   {
     id: 8690216360108,
@@ -14,6 +15,7 @@ export const products = [
     image: "Images/fatih-erasers.webp",
     priceCents: 400,
     category: "stationery",
+    unit: ["pcs"],
   },
   {
     id: 8901180673133,
