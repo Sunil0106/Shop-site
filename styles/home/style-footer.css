@@ -1,6 +1,6 @@
 footer {
   padding: 1rem 0;
-  background: #1f91b4;
+  background: var(--main-bg);
   color: #ffffff9f;
   font-size: 0.9rem;
   line-height: 1.5rem;
