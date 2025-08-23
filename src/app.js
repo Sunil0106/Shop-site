@@ -12,13 +12,8 @@ products.forEach((product, index) => {
             <p class="product-desc">${product.description}
             <div class="product-price-quantity-box">
             <p class="product-price">MVR${product.priceCents}</p>
-            <select>
           
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            </select>
-            <button class="add-to-cart-btn">Add</button>
+            <button class="add-to-cart-btn">Add to cart</button>
             </div>
            
           </div>

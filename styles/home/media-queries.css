@@ -156,4 +156,11 @@
   .cart-content .remove-cart-item:active {
     background: var(--txt-clr);
   }
+  fieldset .checkout-btn:hover,
+  .feedback-box .send-feedback:hover,
+  fieldset .checkout-btn:active,
+  .feedback-box .send-feedback:active {
+    background: var(--cart-clr);
+    color: var(--txt-clr);
+  }
 }
