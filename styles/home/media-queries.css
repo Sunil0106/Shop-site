@@ -152,4 +152,8 @@
   .product-name-content {
     display: none;
   }
+  .cart-content .remove-cart-item:hover,
+  .cart-content .remove-cart-item:active {
+    background: var(--txt-clr);
+  }
 }
