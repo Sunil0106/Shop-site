@@ -6,7 +6,7 @@ export const products = [
     image: "Images/hibis-tissue.png",
     priceCents: 1200,
     category: "households",
-    unit: ["pcs"],
+    unit: ["kg", "gram"],
   },
   {
     id: 8690216360108,
