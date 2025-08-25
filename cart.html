@@ -46,7 +46,7 @@
           <div class="cart-logo">
             <a href="cart.html" target="_self"
               ><i class="fa-solid fa-bag-shopping"></i
-              ><span class="cart-quantity">3</span>
+              ><span class="cart-quantity js-cart-quantity">0</span>
             </a>
           </div>
           <div class="theme-mode">
@@ -68,7 +68,10 @@
         <section class="cart-items-section">
           <fieldset class="cart-items-content js-cart-items-content">
             <!-- contains a single product -->
-            <legend>CHECKOUT ITEMS (5)</legend>
+            <legend>
+              CHECKOUT ITEMS (<span class="js-cart-list-quantity"></span>)
+            </legend>
+            <div class="insert-data"></div>
           </fieldset>
         </section>
         <!-- content checkout details -->

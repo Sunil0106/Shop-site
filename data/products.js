@@ -6,7 +6,7 @@ export const products = [
     image: "Images/hibis-tissue.png",
     priceCents: 1200,
     category: "households",
-    unit: ["pcs", "pkts"],
+    unit: ["pcs"],
   },
   {
     productId: "8690216360108",
@@ -15,7 +15,7 @@ export const products = [
     image: "Images/fatih-erasers.webp",
     priceCents: 400,
     category: "stationery",
-    unit: ["pcs"],
+    unit: ["pcs", "dzn"],
   },
   {
     productId: "8901180673133",
@@ -24,6 +24,7 @@ export const products = [
     image: "Images/castell-geometry.jpg",
     priceCents: 4500,
     category: "stationery",
+    unit: ["pcs"],
   },
   {
     productId: "9556233132038",
@@ -32,6 +33,7 @@ export const products = [
     image: "Images/campap-notebook.webp",
     priceCents: 5000,
     category: "stationery",
+    unit: ["pcs", "dozon"],
   },
   {
     productId: "9556233132098",
@@ -40,6 +42,7 @@ export const products = [
     image: "Images/red-raw-rice.jpg",
     priceCents: 3500,
     category: "food",
+    unit: ["pcs"],
   },
 
   {
@@ -49,6 +52,7 @@ export const products = [
     image: "Images/oil-18L.jpg",
     priceCents: 43000,
     category: "food",
+    unit: ["pcs"],
   },
   {
     productId: "9556239132908",
@@ -57,6 +61,7 @@ export const products = [
     image: "Images/slice-cheese.jpg",
     priceCents: 3600,
     category: "food",
+    unit: ["pcs", "pkt"],
   },
   {
     productId: "289494890483",
@@ -65,6 +70,7 @@ export const products = [
     image: "Images/kin-yogurt.png",
     priceCents: 28500,
     category: "drinks",
+    unit: ["pcs"],
   },
   {
     productId: "40111445",
@@ -73,6 +79,7 @@ export const products = [
     image: "Images/M&M-peanut.jpg",
     priceCents: 1800,
     category: "candy",
+    unit: ["pcs"],
   },
   {
     productId: "40111490",
@@ -81,6 +88,7 @@ export const products = [
     image: "Images/M&M-chocolate.jpg",
     priceCents: 1800,
     category: "candy",
+    unit: ["pcs"],
   },
   {
     productId: "726165663040",
@@ -89,6 +97,7 @@ export const products = [
     image: "Images/apollo-waffer-krim.jpg",
     priceCents: 150,
     category: "candy",
+    unit: ["pcs"],
   },
   {
     productId: "9555401204874",
@@ -97,6 +106,7 @@ export const products = [
     image: "Images/apollo-layer-chocolate.jpg",
     priceCents: 200,
     category: "cake",
+    unit: ["pcs", "case"],
   },
   {
     productId: "8888166336599",
@@ -105,6 +115,7 @@ export const products = [
     image: "Images/nitto-wafer-chocolate.jpg",
     priceCents: 300,
     category: "chocolate",
+    unit: ["pcs"],
   },
   {
     productId: "726165091065",
@@ -113,6 +124,7 @@ export const products = [
     image: "Images/apollo-layer-pandan.jpg",
     priceCents: 200,
     category: "cake",
+    unit: ["pcs", "case"],
   },
   {
     productId: "726165071036",
@@ -121,5 +133,6 @@ export const products = [
     image: "Images/apollo-layer-strawberry.jpg",
     priceCents: 200,
     category: "cake",
+    unit: ["pcs", "case"],
   },
 ];

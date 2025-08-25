@@ -46,5 +46,4 @@ document.querySelectorAll(".js-add-to-cart-btn").forEach((button) => {
 
 window.addEventListener("load", () => {
   updateCartQuanityOnPage();
-  console.log(cart);
 });
