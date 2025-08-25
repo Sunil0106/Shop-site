@@ -55,3 +55,13 @@ cart = cart.filter(cartItem)=>{
   }
 
 */
+
+export function editCartQuantity(productId, value) {
+  cart.forEach((cartItem) => {
+    if (cartItem.productId === productId) {
+      cartItem.quantity = Number(value);
+    }
+  });
+  saveToStorage();
+  return cart;
+}

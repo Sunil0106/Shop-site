@@ -1,4 +1,9 @@
-import { cart, removeCartItem, saveToStorage } from "../data/cart.js";
+import {
+  cart,
+  removeCartItem,
+  saveToStorage,
+  editCartQuantity,
+} from "../data/cart.js";
 import { products } from "../data/products.js";
 import { calTotalUnitPrice, formatCurrency } from "./utils/money.js";
 
@@ -43,8 +48,8 @@ cart.forEach((cartItem) => {
     <input
       type="number"
       value="${cartItem.quantity}"
-   
-      class="product-cart-quantity"
+   data-id="${matchingProduct.productId}"
+      class="product-cart-quantity js-product-cart-quantity"
       min="1"
     />
     <select name="product-unit" class="product-cart-unit">
@@ -54,10 +59,12 @@ cart.forEach((cartItem) => {
   </div>
   <div class="total-unit-price-content">
     <h4>Total Price</h4>
-    <p class="total-unit-price">MVR ${calTotalUnitPrice(
-      cartItem.quantity,
-      matchingProduct.priceCents
-    )}</p>
+    <p class="total-unit-price js-total-unit-price-${
+      matchingProduct.productId
+    }">MVR ${calTotalUnitPrice(
+    cartItem.quantity,
+    matchingProduct.priceCents
+  )}</p>
   </div>
   <button data-id="${
     matchingProduct.productId
@@ -88,7 +95,29 @@ document.querySelectorAll(".js-remove-cart-item").forEach((removeBtn) => {
 
     container.remove();
     saveToStorage();
+    updateCartCheckoutPage();
   });
 });
 
-console.log(cart);
+//update quantity
+document
+  .querySelectorAll(".js-product-cart-quantity")
+  .forEach((productQuantity) => {
+    productQuantity.addEventListener("change", () => {
+      const productId = productQuantity.dataset.id;
+      const value = Number(productQuantity.value);
+      editCartQuantity(productId, value);
+      saveToStorage();
+
+      //update-page
+      products.forEach((product) => {
+        if (product.productId === productId) {
+          document.querySelector(
+            `.js-total-unit-price-${productId}`
+          ).innerHTML = calTotalUnitPrice(value, product.priceCents);
+        }
+      });
+
+      updateCartCheckoutPage();
+    });
+  });
