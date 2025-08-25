@@ -6,7 +6,7 @@ import {
 } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { calTotalUnitPrice, formatCurrency } from "./utils/money.js";
-
+let timeoutId;
 let checkoutHtml = "";
 
 cart.forEach((cartItem) => {
@@ -96,6 +96,10 @@ document.querySelectorAll(".js-remove-cart-item").forEach((removeBtn) => {
     container.remove();
     saveToStorage();
     updateCartCheckoutPage();
+    document.querySelector(".remove-info").classList.add("hide-info");
+    setTimeout(() => {
+      document.querySelector(".remove-info").classList.remove("hide-info");
+    }, 500);
   });
 });
 
@@ -114,7 +118,7 @@ document
         if (product.productId === productId) {
           document.querySelector(
             `.js-total-unit-price-${productId}`
-          ).innerHTML = calTotalUnitPrice(value, product.priceCents);
+          ).innerHTML = `MVR ${calTotalUnitPrice(value, product.priceCents)}`;
         }
       });
 

@@ -130,14 +130,13 @@ nav {
 .right-nav-tools .cart-logo a {
   color: var(--txt-clr);
 }
-.right-nav-tools .cart-logo .cart-quantity {
+.right-nav-tools .cart-quantity {
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 20px;
   font-weight: bold;
-
   color: var(--cart-clr);
-  font-size: 1rem;
+  font-size: 0.6rem;
 }
 .dark-toggle-btn {
   width: 60px;
@@ -177,4 +176,20 @@ nav {
 } */
 .move-toggle-btn {
   margin-left: 62%;
+}
+
+.add-load {
+  display: none;
+  color: var(--shop-nclr);
+  position: fixed;
+  top: 70px;
+  z-index: 1000;
+  transition: all ease-out 0.15s;
+  width: 100%;
+  text-align: center;
+  background: rgba(11, 122, 226, 0.863);
+}
+
+.hide-info {
+  display: block;
 }

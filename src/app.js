@@ -38,6 +38,12 @@ function updateCartQuanityOnPage() {
 document.querySelectorAll(".js-add-to-cart-btn").forEach((button) => {
   button.addEventListener("click", () => {
     const productId = button.dataset.id;
+
+    //info
+    document.querySelector(".js-added-info").classList.add("hide-info");
+    setTimeout(() => {
+      showAddInfo();
+    }, 500);
     addToCart(productId);
     saveToStorage();
     updateCartQuanityOnPage();
@@ -47,3 +53,7 @@ document.querySelectorAll(".js-add-to-cart-btn").forEach((button) => {
 window.addEventListener("load", () => {
   updateCartQuanityOnPage();
 });
+
+function showAddInfo() {
+  document.querySelector(".js-added-info").classList.remove("hide-info");
+}

@@ -80,6 +80,9 @@
     flex: 1;
     max-width: none;
   }
+  .add-load {
+    top: 62px;
+  }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 765px) {
@@ -162,5 +165,9 @@
   .feedback-box .send-feedback:active {
     background: var(--cart-clr);
     color: var(--txt-clr);
+  }
+  /* info */
+  .add-load {
+    top: 62px;
   }
 }
