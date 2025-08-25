@@ -3,5 +3,5 @@ export function formatCurrency(value) {
 }
 
 export function calTotalUnitPrice(unit, unitPrice) {
-  return unit * unitPrice;
+  return formatCurrency(unit * unitPrice);
 }
