@@ -82,7 +82,7 @@ main {
   transition: all 0.15s ease-in;
 }
 .product-price-quantity-box .add-to-cart-btn:hover {
-  background: #1f91b4;
+  background: var(--main-bg);
   color: white;
 }
 .product-price-quantity-box .add-to-cart-btn:active {

@@ -1,6 +1,6 @@
+import { cart } from "../data/cart.js";
 import { products } from "../data/products.js";
-import { cart, addToCart } from "../data/cart.js";
-import { formatCurrency } from "./utils/money.js";
+import { formatCurrency } from "../src/utils/money.js";
 //imports
 
 let html = "";
@@ -28,21 +28,13 @@ products.forEach((product, index) => {
 
 document.querySelector(".content-grid-container").innerHTML = html;
 
-function updateCartQuantity() {
-  let cartQuantity = 0;
-
-  cart.forEach((cartItem) => {
-    cartQuantity += cartItem.quantity;
-  });
-
-  document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
-}
-
 document.querySelectorAll(".js-add-to-cart-btn").forEach((button) => {
   button.addEventListener("click", () => {
     const productId = button.dataset.id;
-
     addToCart(productId);
-    updateCartQuantity();
   });
 });
+function addToCart(productId) {
+  cart.push({ productId, quantity: 1 });
+  console.log(cart);
+}

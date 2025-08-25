@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: 8888399612064,
+    id: "8888399612064",
     name: "Hibis Box Tissue",
     description: "soft white facial tissue",
     image: "Images/hibis-tissue.png",
@@ -9,7 +9,7 @@ export const products = [
     unit: ["kg", "gram"],
   },
   {
-    id: 8690216360108,
+    id: "8690216360108",
     name: "Fatih Dust-Free Erasers",
     description: "Phthalate free, Latex-free",
     image: "Images/fatih-erasers.webp",
@@ -18,7 +18,7 @@ export const products = [
     unit: ["pcs"],
   },
   {
-    id: 8901180673133,
+    id: "8901180673133",
     name: "Faber-Castell",
     description: "Sphere Mathematical Drawing instrument Box",
     image: "Images/castell-geometry.jpg",
@@ -26,7 +26,7 @@ export const products = [
     category: "stationery",
   },
   {
-    id: 9556233132038,
+    id: "9556233132038",
     name: "Campap",
     description: "Spiral notebook",
     image: "Images/campap-notebook.webp",
@@ -34,7 +34,7 @@ export const products = [
     category: "stationery",
   },
   {
-    id: 9556233132098,
+    id: "9556233132098",
     name: "ARIYA RED RAW RICE 1KG",
     description: "Grains and Lentils",
     image: "Images/red-raw-rice.jpg",
@@ -43,7 +43,7 @@ export const products = [
   },
 
   {
-    id: 9556233132908,
+    id: "9556233132908",
     name: "CHOICE VEGETABLE OIL 18L",
     description: "Oils & Ghee",
     image: "Images/oil-18L.jpg",
@@ -51,7 +51,7 @@ export const products = [
     category: "food",
   },
   {
-    id: 9556239132908,
+    id: "9556239132908",
     name: "HAPPY COW SLICE CHEESE REGULAR 200G",
     description: "Dairy & Cheese",
     image: "Images/slice-cheese.jpg",
@@ -59,7 +59,7 @@ export const products = [
     category: "food",
   },
   {
-    id: 289494890483,
+    id: "289494890483",
     name: "KIN YOGURT 200ML",
     description: "Milk & Nutritional",
     image: "Images/kin-yogurt.png",
@@ -67,7 +67,7 @@ export const products = [
     category: "drinks",
   },
   {
-    id: 40111445,
+    id: "40111445",
     name: "M&M's PEANUT GEMS",
     description: "Chocolate covered peanut in a sugar shell ",
     image: "Images/M&M-peanut.jpg",
@@ -75,7 +75,7 @@ export const products = [
     category: "candy",
   },
   {
-    id: 40111490,
+    id: "40111490",
     name: "M&M's CHOCOLATE GEMS",
     description: "Chocolate in a sugar shell",
     image: "Images/M&M-chocolate.jpg",
@@ -83,7 +83,7 @@ export const products = [
     category: "candy",
   },
   {
-    id: 726165663040,
+    id: "726165663040",
     name: "APOLLO WAFER DENGAN KRIM COKLAT",
     description: "Milk chocolate wafer",
     image: "Images/apollo-waffer-krim.jpg",
@@ -91,7 +91,7 @@ export const products = [
     category: "candy",
   },
   {
-    id: 9555401204874,
+    id: "9555401204874",
     name: "APOLLO LAYER CAKE-18G CHOCOLATE",
     description: "Kek coklat berlapis",
     image: "Images/apollo-layer-chocolate.jpg",
@@ -99,7 +99,7 @@ export const products = [
     category: "cake",
   },
   {
-    id: 8888166336599,
+    id: "8888166336599",
     name: "NITTO WAFER CHOCOLATE 17G",
     description: "Wafer Krim Cockelat Salut Cokelat",
     image: "Images/nitto-wafer-chocolate.jpg",
@@ -107,7 +107,7 @@ export const products = [
     category: "chocolate",
   },
   {
-    id: 726165091065,
+    id: "726165091065",
     name: "APOLLO LAYER CAKE-18G PANDAN",
     description: "Kek Lapis Persia Pandan",
     image: "Images/apollo-layer-pandan.jpg",
@@ -115,7 +115,7 @@ export const products = [
     category: "cake",
   },
   {
-    id: 726165071036,
+    id: "726165071036",
     name: "APOLLO LAYER CAKE-18G STRAWBERRY",
     description: "Kek Lapis Strawberi",
     image: "Images/apollo-layer-strawberry.jpg",

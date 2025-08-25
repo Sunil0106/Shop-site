@@ -56,7 +56,7 @@
 
   .product-price-quantity-box .add-to-cart-btn:hover,
   .product-price-quantity-box .add-to-cart-btn:active {
-    background: #22c55e; /* your hover/click color */
+    background: var(--main-bg); /* your hover/click color */
     color: inherit;
   }
   .foot-content {
