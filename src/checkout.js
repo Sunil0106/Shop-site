@@ -3,10 +3,11 @@ import {
   removeCartItem,
   saveToStorage,
   editCartQuantity,
+  calCartTotalPrice,
 } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { calTotalUnitPrice, formatCurrency } from "./utils/money.js";
-let timeoutId;
+
 let checkoutHtml = "";
 
 cart.forEach((cartItem) => {
@@ -20,11 +21,21 @@ cart.forEach((cartItem) => {
     return;
   }
   let productUnit = "";
-
+  if (matchingProduct) {
+    if (!cartItem.unit) {
+      cartItem.unit = matchingProduct.unit[0];
+    }
+    cartItem.totalPrice = calTotalUnitPrice(
+      cartItem.quantity,
+      cartItem.unit,
+      matchingProduct.priceCents
+    );
+  }
   if (Array.isArray(matchingProduct.unit)) {
     matchingProduct.unit.forEach((unitVal) => {
+      const selected = cartItem.unit === unitVal ? "selected" : "";
       productUnit += `
-    <option value="${unitVal}">${unitVal}</option>
+    <option value="${unitVal}" ${selected}>${unitVal}</option>
 
     `;
     });
@@ -49,10 +60,13 @@ cart.forEach((cartItem) => {
       type="number"
       value="${cartItem.quantity}"
    data-id="${matchingProduct.productId}"
-      class="product-cart-quantity js-product-cart-quantity"
+      class="product-cart-quantity js-product-cart-quantity js-product-unit-${
+        matchingProduct.productId
+      }"
       min="1"
     />
-    <select name="product-unit" class="product-cart-unit">
+    <select name="product-unit" class="product-cart-unit js-product-unit"
+     data-id="${matchingProduct.productId}">
       ${productUnit}
 
     </select>
@@ -63,6 +77,7 @@ cart.forEach((cartItem) => {
       matchingProduct.productId
     }">MVR ${calTotalUnitPrice(
     cartItem.quantity,
+    cartItem.unit || matchingProduct.unit[0],
     matchingProduct.priceCents
   )}</p>
   </div>
@@ -85,7 +100,12 @@ function updateCartCheckoutPage() {
   document.querySelector(".js-cart-list-quantity").innerHTML = cartQuantity;
 }
 
-window.addEventListener("load", updateCartCheckoutPage);
+window.addEventListener("load", () => {
+  updateCartCheckoutPage();
+  document.querySelector(
+    ".js-total-price-sum"
+  ).innerHTML = `Total Amount: MVR ${calCartTotalPrice()}`;
+});
 
 document.querySelectorAll(".js-remove-cart-item").forEach((removeBtn) => {
   removeBtn.addEventListener("click", () => {
@@ -94,6 +114,7 @@ document.querySelectorAll(".js-remove-cart-item").forEach((removeBtn) => {
     const container = document.querySelector(`.js-cart-product-${productId}`);
 
     container.remove();
+
     saveToStorage();
     updateCartCheckoutPage();
     document.querySelector(".remove-info").classList.add("hide-info");
@@ -111,17 +132,61 @@ document
       const productId = productQuantity.dataset.id;
       const value = Number(productQuantity.value);
       editCartQuantity(productId, value);
-      saveToStorage();
-
-      //update-page
-      products.forEach((product) => {
-        if (product.productId === productId) {
-          document.querySelector(
-            `.js-total-unit-price-${productId}`
-          ).innerHTML = `MVR ${calTotalUnitPrice(value, product.priceCents)}`;
-        }
-      });
-
+      updateTotalPrice(productId);
       updateCartCheckoutPage();
     });
   });
+
+document.querySelectorAll(".js-product-unit").forEach((unit) => {
+  unit.addEventListener("change", () => {
+    const productId = unit.dataset.id;
+    const unitVal = unit.value;
+    const sameProduct = cart.find((cartItem) => {
+      return cartItem.productId === productId;
+    });
+    if (sameProduct) {
+      sameProduct.unit = unitVal;
+    }
+    updateTotalPrice(productId);
+
+    saveToStorage();
+    showTotalPrice();
+  });
+});
+
+function updateTotalPrice(productId) {
+  const cartItem = cart.find((cartItem) => {
+    return cartItem.productId === productId;
+  });
+  const product = products.find((product) => {
+    return product.productId === productId;
+  });
+  const unit = cartItem.unit || product.unit[0];
+
+  const totalPrice = calTotalUnitPrice(
+    cartItem.quantity,
+    unit,
+    product.priceCents
+  );
+  cartItem.totalPrice = totalPrice;
+  saveToStorage();
+  document.querySelector(
+    `.js-total-unit-price-${productId}`
+  ).innerHTML = `MVR${totalPrice}`;
+  updateCartCheckoutPage();
+  showTotalPrice();
+}
+
+//show total
+function showTotalPrice() {
+  document.querySelector(
+    ".js-total-price-sum"
+  ).innerHTML = `Total Amount: MVR ${calCartTotalPrice()}`;
+}
+
+function ordersDate() {
+  const date = new Date();
+  const fullYear = date.getFullYear();
+  console.log(fullYear);
+}
+ordersDate();

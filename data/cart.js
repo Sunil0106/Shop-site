@@ -65,3 +65,11 @@ export function editCartQuantity(productId, value) {
   saveToStorage();
   return cart;
 }
+
+export function calCartTotalPrice() {
+  let sumOfTotalPrice = 0;
+  cart.forEach((cartItem) => {
+    sumOfTotalPrice += Number(cartItem.totalPrice);
+  });
+  return sumOfTotalPrice;
+}
