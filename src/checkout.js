@@ -105,6 +105,8 @@ window.addEventListener("load", () => {
   document.querySelector(
     ".js-total-price-sum"
   ).innerHTML = `Total Amount: MVR ${calCartTotalPrice()}`;
+
+  ordersDate();
 });
 
 document.querySelectorAll(".js-remove-cart-item").forEach((removeBtn) => {
@@ -187,6 +189,38 @@ function showTotalPrice() {
 function ordersDate() {
   const date = new Date();
   const fullYear = date.getFullYear();
-  console.log(fullYear);
+  let month = date.getMonth() + 1;
+  let day = date.getDate();
+  let timeHour = date.getHours();
+  let timeMinute = date.getMinutes();
+
+  timeHour = timeHour < 10 ? "0" + timeHour : timeHour;
+  timeMinute = timeMinute < 10 ? "0" + timeMinute : timeMinute;
+
+  let dateMax = new Date();
+  dateMax.setDate(dateMax.getDate() + 1);
+  let maxYear = dateMax.getFullYear();
+  let monMax = dateMax.getMonth() + 1;
+  let maxday = dateMax.getDate();
+
+  monMax = monMax < 10 ? "0" + monMax : monMax;
+
+  maxday = maxday < 10 ? "0" + maxday : maxday;
+
+  month = month < 10 ? "0" + month : month;
+  day = day < 10 ? "0" + day : day;
+  const maxDateVal = `${maxYear}-${monMax}-${maxday}`;
+  const timeValue = `${timeHour}:${timeMinute}`;
+  document.querySelector(".js-cart-date-time").innerHTML = `
+ <h4>Order placed date-time</h4>
+                <input
+                  type="date"
+                  class="order-date"
+                  min="${fullYear}-${month}-${day}"
+                  max="${maxDateVal}"
+                />
+                <input type="time" class="order-time" value="${timeHour}:${timeMinute}" min="${timeValue}" /> 
+  `;
 }
+
 ordersDate();
