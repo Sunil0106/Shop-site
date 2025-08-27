@@ -71,11 +71,11 @@
       </div>
     </nav>
     <main>
-      <div class="form-container">
+      <div class="form-container hide-login js-form-container">
         <form class="js-user-data-form">
           <h3>Welcome, Guest!</h3>
           <p class="info">
-            Please fill in your details for checkout now and future orders
+            Please fill in your details for checkout now and future orders.
           </p>
           <input
             type="text"
@@ -121,10 +121,13 @@
           <div class="cart-checkout">
             <fieldset>
               <legend>ORDER SUMMARY</legend>
+              <p class="order-summary-info">
+                All details must be selected and bill amount must be greater 0
+              </p>
               <div class="card-date-time js-cart-date-time"></div>
               <div class="delivery-methods-content">
                 <h4>Delivery Methods</h4>
-                <select class="delivery-method">
+                <select class="delivery-method js-delivery-method">
                   <option value="">Select a delivery method</option>
                   <option value="Self Receive from shop">
                     Self Receive from shop
@@ -134,7 +137,7 @@
               </div>
               <div class="payment-methods-content">
                 <h4>Payment Methods</h4>
-                <select class="payment-methods">
+                <select class="payment-methods js-payment-method">
                   <option value="">Select a payment method</option>
                   <option value="cash payment on delivery">
                     Cash payment on delivery
@@ -145,10 +148,12 @@
                 </select>
               </div>
               <div class="total-bill-amount">
-                <h4 class="js-total-price-sum" id="cart-total">
-                  Total Amount: MVR 1000
+                <h4
+                  class="js-total-price-sum js-order-summary-total-amount"
+                  id="cart-total"
+                ></h4>Total Amount: MVR <span class="js-bill-amount">0</span>
                 </h4>
-                <button class="checkout-btn">Checkout</button>
+                <button class="checkout-btn js-checkout-btn">Checkout</button>
               </div>
             </fieldset>
           </div>
@@ -249,6 +254,10 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="src/checkout.js"></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script type="module" src="src/checkout.js" ></script>
   </body>
 </html>

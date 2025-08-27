@@ -138,6 +138,9 @@ fieldset .payment-methods-content select,
   color: var(--cart-clr);
   cursor: pointer;
 }
+.order-time {
+  pointer-events: none;
+}
 fieldset .card-date-time .order-date:focus,
 fieldset .card-date-time .order-time:focus,
 fieldset .delivery-methods-content select:focus,

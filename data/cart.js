@@ -92,3 +92,8 @@ export function updateCart() {
 
 export const userDetails =
   JSON.parse(localStorage.getItem("userDetailsCart")) || [];
+
+export const orderSummaryDetails = [];
+
+export let placedOrder =
+  JSON.parse(localStorage.getItem("order-history")) || [];

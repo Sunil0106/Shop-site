@@ -6,10 +6,16 @@ import {
   calCartTotalPrice,
   updateCart,
   userDetails,
+  orderSummaryDetails,
+  placedOrder,
 } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { calTotalUnitPrice, formatCurrency } from "./utils/money.js";
-
+emailjs.init({
+  publicKey: "37jcVH8TxRn_SP7NZ",
+});
+//update date-time
+setInterval(ordersDate, 100);
 let checkoutHtml = "";
 
 cart.forEach((cartItem) => {
@@ -32,6 +38,7 @@ cart.forEach((cartItem) => {
       cartItem.unit,
       matchingProduct.priceCents
     );
+    cartItem.productName = matchingProduct.name;
   }
   if (Array.isArray(matchingProduct.unit)) {
     matchingProduct.unit.forEach((unitVal) => {
@@ -100,10 +107,7 @@ function updateCartCheckoutPage() {
 
 window.addEventListener("load", () => {
   updateCartCheckoutPage();
-  document.querySelector(
-    ".js-total-price-sum"
-  ).innerHTML = `Total Amount: MVR ${calCartTotalPrice()}`;
-
+  showTotalPrice();
   ordersDate();
 });
 
@@ -114,7 +118,7 @@ document.querySelectorAll(".js-remove-cart-item").forEach((removeBtn) => {
     const container = document.querySelector(`.js-cart-product-${productId}`);
 
     container.remove();
-
+    showTotalPrice();
     saveToStorage();
     updateCartCheckoutPage();
     document.querySelector(".remove-info").classList.add("hide-info");
@@ -179,9 +183,7 @@ function updateTotalPrice(productId) {
 
 //show total
 function showTotalPrice() {
-  document.querySelector(
-    ".js-total-price-sum"
-  ).innerHTML = `Total Amount: MVR ${calCartTotalPrice()}`;
+  document.querySelector(".js-bill-amount").innerHTML = calCartTotalPrice();
 }
 
 function ordersDate() {
@@ -211,13 +213,13 @@ function ordersDate() {
   const timeValue = `${timeHour}:${timeMinute}`;
   document.querySelector(".js-cart-date-time").innerHTML = `
  <h4>Order placed date-time</h4>
-                <input
+                <input name="date" id="date"
                   type="date"
-                  class="order-date"
+                  class="order-date js-order-date"
                   min="${fullYear}-${month}-${day}"
                   max="${maxDateVal}" value='${fullYear}-${month}-${day}'
                 />
-                <input type="time" class="order-time" value="${timeHour}:${timeMinute}" min="${timeValue}" /> 
+                <input type="time" class="order-time js-order-time" value="${timeHour}:${timeMinute}" min="${timeValue}" name="time" id="time"/> 
   `;
 }
 
@@ -235,11 +237,13 @@ function userDetailsInput() {
   deliveryLocationInput.classList.remove("show-error-input");
   userNumberInput.classList.remove("show-error-input");
 
-  if (!userName || !userNumber || !deliveryLocation) {
+  if (!userName || !userNumber || userNumber.length < 5 || !deliveryLocation) {
     showError.classList.add("show-error-msg");
-    showError.innerHTML = "All details must be filled";
+    showError.innerHTML =
+      "All details must be filled and make sure the contact number length must be greater than 5";
     if (!userName) userInputName.classList.add("show-error-input");
-    if (!userNumber) userNumberInput.classList.add("show-error-input");
+    if (!userNumber || userNumber.length < 5)
+      userNumberInput.classList.add("show-error-input");
     if (!deliveryLocation)
       deliveryLocationInput.classList.add("show-error-input");
     return null;
@@ -253,10 +257,131 @@ function userDetailsInput() {
   userDetails.push(userData);
 
   localStorage.setItem("userDetailsCart", JSON.stringify(userDetails));
+  document.querySelector(".js-form-container").classList.add("hide-login");
 }
 
 document.querySelector(".js-user-data-form").addEventListener("submit", (e) => {
   e.preventDefault();
   userDetailsInput();
 });
-console.log(userDetails);
+
+function orderSummary() {
+  const date = document.querySelector(".js-order-date");
+  const orderDate = date.value;
+  const time = document.querySelector(".js-order-time");
+  const orderTime = time?.value || "";
+
+  //delivery method
+  const deliveryMethodEl = document.querySelector(".js-delivery-method");
+
+  let deliveryMethod = deliveryMethodEl?.value || "";
+  deliveryMethodEl.addEventListener("change", (e) => {
+    deliveryMethod = e.target.value;
+  });
+
+  //payment method
+  const paymentMethodEl = document.querySelector(".js-payment-method");
+  let paymentMethod = paymentMethodEl.value;
+  paymentMethodEl.addEventListener("change", (e) => {
+    paymentMethod = e.target.value;
+  });
+
+  //reset errors
+
+  const errorInfo = document.querySelector(".order-summary-info");
+
+  paymentMethodEl.classList.remove("show-error-input");
+  deliveryMethodEl.classList.remove("show-error-input");
+  errorInfo.classList.remove("show-error-msg");
+  //total bill amount
+  const billAmountEl = document.querySelector(".js-bill-amount");
+  const totalBillAmount = Number(billAmountEl.innerText) || 0;
+
+  //work
+
+  if (paymentMethod === "" || deliveryMethod === "" || totalBillAmount === 0) {
+    errorInfo.classList.add("show-error-msg");
+    if (paymentMethod === "") paymentMethodEl.classList.add("show-error-input");
+    if (deliveryMethod === "")
+      deliveryMethodEl.classList.add("show-error-input");
+  } else {
+    const orderDetails = {
+      "order-time": orderTime,
+      "order-date": orderDate,
+      "delivery-method": deliveryMethod,
+      "payment-method": paymentMethod,
+      "bill-amount": totalBillAmount,
+    };
+    orderSummaryDetails.push(orderDetails);
+  }
+}
+document.querySelector(".js-checkout-btn").addEventListener("click", () => {
+  if (userDetails.length < 1) {
+    document.querySelector(".js-form-container").classList.remove("hide-login");
+    return;
+  }
+
+  orderSummary(); // Update orderSummaryDetails
+
+  const user = userDetails[userDetails.length - 1];
+  const order = orderSummaryDetails[orderSummaryDetails.length - 1];
+
+  if (!user || !order || cart.length === 0) {
+    alert("Cart or user info is missing. Please check before checkout.");
+    return;
+  }
+
+  // Keep your original HTML format exactly
+  const ordersHtml = cart
+    .map(
+      (item) => `
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px;">
+    <tr style="vertical-align: top;">
+      <td style="padding: 8px;">
+        <div>${item.productName}</div>
+        <div style="font-size: 14px; color: #888;">QTY: ${item.quantity}${
+        item.unit
+      }</div>
+      </td>
+      <td style="padding: 8px; text-align: right;">
+        <strong>MVR ${Number(item.totalPrice).toFixed(2)}</strong>
+      </td>
+    </tr>
+  </table>
+`
+    )
+    .join("");
+
+  // Send email with EmailJS
+  emailjs
+    .send("lebanneyOrders", "template_md0geov", {
+      username: user.username,
+      phone: user.phone,
+      delivery_location: user["delivery-location"],
+      delivery_method: order["delivery-method"],
+      payment_method: order["payment-method"],
+      total_amount: order["bill-amount"], // keep format as string with 2 decimals
+      order_id: order["order-time"] + "leban" + order["order-date"],
+      orders: ordersHtml,
+      email: user.email || "",
+    })
+    .then((response) => {
+      console.log("Email sent successfully!", response);
+      alert(`Hey ${user.username}, your order confirmation has been sent!`);
+
+      // Save cart to history safely
+      placedOrder.push([...cart]);
+      localStorage.setItem("order-history", JSON.stringify(placedOrder));
+
+      // Clear cart
+      cart.length = 0;
+      saveToStorage(cart);
+      updateCartCheckoutPage();
+      showTotalPrice();
+      console.log(placedOrder);
+    })
+    .catch((error) => {
+      console.error("Failed to send order email:", error);
+      alert("Failed to send order email. Please try again.");
+    });
+});
