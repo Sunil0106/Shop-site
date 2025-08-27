@@ -73,3 +73,22 @@ export function calCartTotalPrice() {
   });
   return sumOfTotalPrice;
 }
+
+export function updateCart() {
+  let cartQuantity = 0;
+  cart.forEach((cartItem) => {
+    if (cartItem.unit === "dozon") {
+      cartQuantity += cartItem.quantity * 12;
+    } else if (cartItem.unit === "pkt") {
+      cartQuantity += cartItem.quantity * 10;
+    } else if (cartItem.unit === "case") {
+      cartQuantity += cartItem.quantity * 48;
+    } else {
+      cartQuantity += cartItem.quantity;
+    }
+  });
+  return cartQuantity;
+}
+
+export const userDetails =
+  JSON.parse(localStorage.getItem("userDetailsCart")) || [];

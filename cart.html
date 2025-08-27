@@ -11,6 +11,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="shortcut icon"
+      href="Images/Lebanney-shop-logo.png"
+      type="image/x-icon"
+    />
     <!-- adding main css  -->
     <link rel="stylesheet" href="styles/cart/cart-main.css" />
     <!-- adding navcss -->
@@ -19,7 +24,8 @@
     <link rel="stylesheet" href="styles/home/style-footer.css" />
     <!-- adding media query -->
     <link rel="stylesheet" href="styles/home/media-queries.css" />
-
+    <!-- login form -->
+    <link rel="stylesheet" href="styles/cart/login.css" />
     <title>Cart</title>
   </head>
   <body>
@@ -65,6 +71,38 @@
       </div>
     </nav>
     <main>
+      <div class="form-container">
+        <form class="js-user-data-form">
+          <h3>Welcome, Guest!</h3>
+          <p class="info">
+            Please fill in your details for checkout now and future orders
+          </p>
+          <input
+            type="text"
+            name="user_name"
+            id="username"
+            class="js-username-input"
+            placeholder="Username"
+          />
+          <input
+            type="number"
+            name="phone_number"
+            id="phone-number"
+            class="js-userphone-number"
+            placeholder="Phone Number"
+          />
+
+          <input
+            type="text"
+            name="user_adderess"
+            id="address"
+            class="js-delivery-location"
+            placeholder="Delivery address"
+          />
+          <button type="submit">Save</button>
+        </form>
+      </div>
+
       <!-- contains whole content -->
       <div class="cart-content">
         <!-- contains products&quantity -->

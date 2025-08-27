@@ -1,0 +1,69 @@
+.form-container {
+  position: fixed;
+  background: var(--main-bg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100vh;
+  font-family: inherit;
+  color: var(--txt-clr);
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.37);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  width: 30%;
+  min-width: 340px;
+  background: var(--cart-clr);
+}
+.form-container form input,
+.form-container form button {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  background: var(--main-bg);
+  color: var(--cart-clr);
+  transition: all ease-in-out 0.15s;
+}
+.form-container form input::placeholder {
+  color: var(--cart-clr);
+}
+.form-container form input:focus {
+  outline: 2px solid var(--txt-clr);
+}
+.form-container form p {
+  font-size: 0.7rem;
+  color: var(--txt-clr);
+  margin-bottom: 1rem;
+}
+form #phone-number::-webkit-inner-spin-button,
+#phone-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-container form button:hover {
+  background: var(--txt-clr);
+  cursor: pointer;
+}
+.form-container form button:active {
+  background: var(--main-bg);
+}
+
+.show-error-msg {
+  color: tomato !important;
+}
+.show-error-input {
+  color: tomato !important
+  ;
+  border: 2px solid tomato !important;
+}

@@ -4,6 +4,8 @@ import {
   saveToStorage,
   editCartQuantity,
   calCartTotalPrice,
+  updateCart,
+  userDetails,
 } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { calTotalUnitPrice, formatCurrency } from "./utils/money.js";
@@ -92,12 +94,8 @@ cart.forEach((cartItem) => {
 document.querySelector(".insert-data").innerHTML = checkoutHtml;
 
 function updateCartCheckoutPage() {
-  let cartQuantity = 0;
-  cart.forEach((cartItem) => {
-    cartQuantity += cartItem.quantity;
-  });
-  document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
-  document.querySelector(".js-cart-list-quantity").innerHTML = cartQuantity;
+  document.querySelector(".js-cart-quantity").innerHTML = updateCart();
+  document.querySelector(".js-cart-list-quantity").innerHTML = updateCart();
 }
 
 window.addEventListener("load", () => {
@@ -217,10 +215,48 @@ function ordersDate() {
                   type="date"
                   class="order-date"
                   min="${fullYear}-${month}-${day}"
-                  max="${maxDateVal}"
+                  max="${maxDateVal}" value='${fullYear}-${month}-${day}'
                 />
                 <input type="time" class="order-time" value="${timeHour}:${timeMinute}" min="${timeValue}" /> 
   `;
 }
 
-ordersDate();
+//funtion check userDetails
+function userDetailsInput() {
+  const userInputName = document.querySelector(".js-username-input");
+  const userName = userInputName.value.trim();
+  const userNumberInput = document.querySelector(".js-userphone-number");
+  const userNumber = userNumberInput.value.trim();
+  const showError = document.querySelector(".info");
+  const deliveryLocationInput = document.querySelector(".js-delivery-location");
+  const deliveryLocation = deliveryLocationInput.value.trim();
+  showError.classList.remove("show-error-msg");
+  userInputName.classList.remove("show-error-input");
+  deliveryLocationInput.classList.remove("show-error-input");
+  userNumberInput.classList.remove("show-error-input");
+
+  if (!userName || !userNumber || !deliveryLocation) {
+    showError.classList.add("show-error-msg");
+    showError.innerHTML = "All details must be filled";
+    if (!userName) userInputName.classList.add("show-error-input");
+    if (!userNumber) userNumberInput.classList.add("show-error-input");
+    if (!deliveryLocation)
+      deliveryLocationInput.classList.add("show-error-input");
+    return null;
+  }
+  const userData = {
+    username: userName,
+    phone: userNumber,
+    "delivery-location": deliveryLocation,
+  };
+
+  userDetails.push(userData);
+
+  localStorage.setItem("userDetailsCart", JSON.stringify(userDetails));
+}
+
+document.querySelector(".js-user-data-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  userDetailsInput();
+});
+console.log(userDetails);

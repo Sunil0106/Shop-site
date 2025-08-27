@@ -83,6 +83,13 @@
   .add-load {
     top: 62px;
   }
+  .form-container form button:hover {
+    background: inherit;
+    cursor: pointer;
+  }
+  .form-container form button:active {
+    background: inherit;
+  }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 765px) {
@@ -169,5 +176,12 @@
   /* info */
   .add-load {
     top: 62px;
+  }
+  .form-container form button:hover {
+    background: inherit;
+    cursor: pointer;
+  }
+  .form-container form button:active {
+    background: inherit;
   }
 }

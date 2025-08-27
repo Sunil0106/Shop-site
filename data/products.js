@@ -15,7 +15,7 @@ export const products = [
     image: "Images/fatih-erasers.webp",
     priceCents: 400,
     category: "stationery",
-    unit: ["pcs", "dzn"],
+    unit: ["pcs", "dozon"],
   },
   {
     productId: "8901180673133",
