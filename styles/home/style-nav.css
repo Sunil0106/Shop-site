@@ -130,10 +130,15 @@ nav {
 .right-nav-tools .cart-logo a {
   color: var(--txt-clr);
 }
-.right-nav-tools .cart-quantity {
+.cart-qcona {
   position: absolute;
-  top: 25px;
-  left: 20px;
+  width: 100%;
+  height: 100%;
+  inset: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+}
+.cart-qcona .cart-quantity {
   font-weight: bold;
   color: var(--cart-clr);
   font-size: 0.6rem;
