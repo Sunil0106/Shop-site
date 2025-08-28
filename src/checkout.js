@@ -232,12 +232,25 @@ function userDetailsInput() {
   const showError = document.querySelector(".info");
   const deliveryLocationInput = document.querySelector(".js-delivery-location");
   const deliveryLocation = deliveryLocationInput.value.trim();
+
+  const userEmailEl = document.querySelector(".js-user-email");
+  const userEmail = userEmailEl.value;
+
   showError.classList.remove("show-error-msg");
   userInputName.classList.remove("show-error-input");
   deliveryLocationInput.classList.remove("show-error-input");
   userNumberInput.classList.remove("show-error-input");
+  userEmailEl.classList.remove("show-error-input");
 
-  if (!userName || !userNumber || userNumber.length < 5 || !deliveryLocation) {
+  if (
+    !userName ||
+    !userNumber ||
+    userNumber.length < 5 ||
+    !deliveryLocation ||
+    !userEmail ||
+    !userEmail.includes("@") ||
+    !userEmail.includes(".")
+  ) {
     showError.classList.add("show-error-msg");
     showError.innerHTML =
       "All details must be filled and make sure the contact number length must be greater than 5";
@@ -246,9 +259,12 @@ function userDetailsInput() {
       userNumberInput.classList.add("show-error-input");
     if (!deliveryLocation)
       deliveryLocationInput.classList.add("show-error-input");
+    if (!userEmail || !userEmail.includes("@") || !userEmail.includes("."))
+      userEmailEl.classList.add("show-error-input");
     return null;
   }
   const userData = {
+    "user-email": userEmail,
     username: userName,
     phone: userNumber,
     "delivery-location": deliveryLocation,
@@ -258,6 +274,8 @@ function userDetailsInput() {
 
   localStorage.setItem("userDetailsCart", JSON.stringify(userDetails));
   document.querySelector(".js-form-container").classList.add("hide-login");
+
+  console.log(userDetails);
 }
 
 document.querySelector(".js-user-data-form").addEventListener("submit", (e) => {
@@ -332,25 +350,15 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
   }
 
   // Keep your original HTML format exactly
-  const ordersHtml = cart
-    .map(
-      (item) => `
-  <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px;">
-    <tr style="vertical-align: top;">
-      <td style="padding: 8px;">
-        <div>${item.productName}</div>
-        <div style="font-size: 14px; color: #888;">QTY: ${item.quantity}${
-        item.unit
-      }</div>
-      </td>
-      <td style="padding: 8px; text-align: right;">
-        <strong>MVR ${Number(item.totalPrice).toFixed(2)}</strong>
-      </td>
-    </tr>
-  </table>
-`
-    )
-    .join("");
+
+  const orders = cart.map((cartItem) => {
+    return {
+      name: cartItem.productName,
+      quantity: cartItem.quantity,
+      unit: cartItem.unit,
+      price: cartItem.totalPrice,
+    };
+  });
 
   // Send email with EmailJS
   emailjs
@@ -362,8 +370,8 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
       payment_method: order["payment-method"],
       total_amount: order["bill-amount"], // keep format as string with 2 decimals
       order_id: order["order-time"] + "leban" + order["order-date"],
-      orders: ordersHtml,
-      email: user.email || "",
+      orders: orders,
+      email: user["user-email"],
     })
     .then((response) => {
       console.log("Email sent successfully!", response);
@@ -385,3 +393,4 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
       alert("Failed to send order email. Please try again.");
     });
 });
+console.log(cart);
