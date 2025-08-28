@@ -92,7 +92,7 @@
   }
 }
 
-@media only screen and (min-width: 376px) and (max-width: 765px) {
+@media only screen and (min-width: 340px) and (max-width: 765px) {
   body {
     padding-top: 72px;
   }
