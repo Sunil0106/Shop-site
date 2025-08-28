@@ -20,6 +20,7 @@
     width: 100%;
     text-align: center;
     padding-left: 0rem;
+    flex: 1;
   }
   .middle-nav-name .search-bar {
     width: 100%;
@@ -90,6 +91,16 @@
   .form-container form button:active {
     background: inherit;
   }
+  .product-price-quantity-box .add-to-cart-btn:active {
+    background: var(--txt-clr);
+    opacity: 1;
+    color: var(--main-bg);
+  }
+  .product-price-quantity-box .add-to-cart-btn:hover {
+    background: var(--txt-clr);
+    color: var(--main-bg);
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 765px) {
@@ -114,7 +125,7 @@
   }
 
   .right-nav-tools {
-    max-width: 100px;
+    max-width: 40px;
   }
   /* media query for main content */
   .content-grid-container {
@@ -183,5 +194,24 @@
   }
   .form-container form button:active {
     background: inherit;
+  }
+  .product-price {
+    font-size: 0.89rem;
+  }
+  .product-price-quantity-box .add-to-cart-btn:active {
+    background: var(--txt-clr);
+    opacity: 1;
+    color: var(--main-bg);
+  }
+  .product-price-quantity-box .add-to-cart-btn:hover {
+    background: var(--txt-clr);
+    color: var(--main-bg);
+    opacity: 1;
+  }
+  .content-grid:hover {
+    transform: translateY(0rem);
+  }
+  .content-grid-container {
+    gap: 0.3rem;
   }
 }
