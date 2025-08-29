@@ -1,3 +1,5 @@
+import { products } from "./products.js";
+import { formatCurrency } from "../src/utils/money.js";
 export let cart = JSON.parse(localStorage.getItem("cart"));
 if (!cart) {
   cart = [
@@ -97,3 +99,48 @@ export const orderSummaryDetails = [];
 
 export let placedOrder =
   JSON.parse(localStorage.getItem("order-history")) || [];
+
+export function searchProduct(productUserVal) {
+  //filter makes an new array with matching values
+  const container = document.querySelector(".content-grid-container");
+  container.innerHTML = "";
+  const foundItems = products.filter(
+    (product) =>
+      product.name.toLowerCase().includes(productUserVal.toLowerCase()) ||
+      product.productId === productUserVal ||
+      product.category.toLowerCase().includes(productUserVal.toLowerCase())
+  );
+
+  let userItem = "";
+  if (foundItems.length === 0) {
+    container.classList.add("item-not-found-container");
+    userItem += `<div class="item-not-found">
+   “Oops! We couldn’t find that product. Try another name or category.”
+   </div>`;
+  } else {
+    container.classList.remove("item-not-found-container");
+    foundItems.forEach((product) => {
+      userItem += `      <div class="content-grid">
+            <div class="image-content">
+              <img src="${product.image}" alt="${product.name}">
+            </div>
+            <div class="product-details">
+              <h4 class="product-name">${product.name}</h4>
+              <p class="product-desc">${product.description}</p>
+              <div class="product-price-quantity-box">
+              <p class="product-price">MVR ${formatCurrency(
+                product.priceCents
+              )}</p>
+            
+              <button
+              data-id="${product.productId}"
+              class="add-to-cart-btn js-add-to-cart-btn">Add to cart</button>
+              </div>
+             
+            </div>
+          </div>`;
+    });
+  }
+
+  container.innerHTML = userItem;
+}

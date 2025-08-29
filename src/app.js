@@ -1,4 +1,9 @@
-import { updateCart, addToCart, saveToStorage } from "../data/cart.js";
+import {
+  updateCart,
+  addToCart,
+  saveToStorage,
+  searchProduct,
+} from "../data/cart.js";
 import { products } from "../data/products.js";
 import { formatCurrency } from "../src/utils/money.js";
 //imports
@@ -53,3 +58,9 @@ window.addEventListener("load", () => {
 function showAddInfo() {
   document.querySelector(".js-added-info").classList.remove("hide-info");
 }
+
+document.querySelector(".js-search-product").addEventListener("keyup", (e) => {
+  let userSearchWord = e.target.value;
+
+  searchProduct(userSearchWord);
+});
