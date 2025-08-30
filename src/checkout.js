@@ -109,6 +109,7 @@ window.addEventListener("load", () => {
   updateCartCheckoutPage();
   showTotalPrice();
   ordersDate();
+  newUser();
 });
 
 document.querySelectorAll(".js-remove-cart-item").forEach((removeBtn) => {
@@ -264,10 +265,10 @@ function userDetailsInput() {
     return null;
   }
   const userData = {
-    "user-email": userEmail,
+    userEmail: userEmail,
     username: userName,
     phone: userNumber,
-    "delivery-location": deliveryLocation,
+    deliveryLocation: deliveryLocation,
   };
 
   userDetails.push(userData);
@@ -365,20 +366,20 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
     .send("lebanneyOrders", "template_md0geov", {
       username: user.username,
       phone: user.phone,
-      delivery_location: user["delivery-location"],
+      delivery_location: user["deliveryLocation"],
       delivery_method: order["delivery-method"],
       payment_method: order["payment-method"],
       total_amount: order["bill-amount"], // keep format as string with 2 decimals
       order_id: order["order-time"] + "leban" + order["order-date"],
       orders: orders,
-      email: user["user-email"],
+      email: user["userEmail"],
     })
     .then((response) => {
       console.log("Email sent successfully!", response);
       alert(`Hey ${user.username}, your order confirmation has been sent!`);
 
       // Save cart to history safely
-      placedOrder.push([...cart]);
+      placedOrder = cart;
       localStorage.setItem("order-history", JSON.stringify(placedOrder));
 
       // Clear cart
@@ -405,3 +406,12 @@ document
       window.location.href = "index.html";
     }
   });
+
+function newUser() {
+  const showLogIn = localStorage.getItem("newUser");
+  if (showLogIn) {
+    document.querySelector(".js-form-container").classList.remove("hide-login");
+
+    localStorage.removeItem("newUser");
+  }
+}

@@ -15,7 +15,7 @@
 
 body {
   font-family: var(--logo-fts);
-  padding-top: 84px;
+  padding-top: 75px;
 }
 
 nav {
@@ -124,6 +124,7 @@ nav {
   position: relative;
   font-size: 2.4rem;
   cursor: pointer;
+  margin-top: 2px;
 }
 .right-nav-tools .cart-logo:hover {
   filter: drop-shadow(2px 2px 5px rgba(37, 35, 35, 0.185));
@@ -188,4 +189,46 @@ nav {
 
 .hide-info {
   display: block;
+}
+
+/*profile*/
+.user-data-section {
+  position: fixed;
+  right: 0;
+  background: var(--main-bg);
+  padding: 1rem 0.5rem;
+  top: 83px;
+  width: 100%;
+  max-width: 300px;
+  z-index: 9999;
+  border-radius: 0.5rem 0 0 0.5rem;
+  color: var(--txt-clr);
+  height: max-content;
+  max-height: 300px;
+  border: 4px double var(--cart-clr);
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+.user-data-section ul {
+  list-style-type: none;
+}
+
+.user-data-section .buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.user-data-section .buttons button {
+  background: var(--txt-clr);
+  cursor: pointer;
+  padding: 0.2rem;
+  color: var(--cart-clr);
+  border: 2px groove var(--cart-clr);
+}
+.login-new-user {
+  display: block;
+  cursor: pointer;
+}
+.hide-login {
+  display: none;
 }

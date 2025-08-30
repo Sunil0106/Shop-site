@@ -3,6 +3,7 @@ import {
   addToCart,
   saveToStorage,
   searchProduct,
+  userDetails,
 } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { formatCurrency } from "../src/utils/money.js";
@@ -54,6 +55,7 @@ document.querySelectorAll(".js-add-to-cart-btn").forEach((button) => {
 
 window.addEventListener("load", () => {
   updateCartQuanityOnPage();
+  loggedUserData();
 });
 
 function showAddInfo() {
@@ -71,4 +73,30 @@ if (searchFromCart) {
   document.querySelector(".js-search-product").value = searchFromCart;
   searchProduct(searchFromCart);
   localStorage.removeItem("userSearch");
+}
+
+//show login page
+const newUserAdd = document.querySelector(".js-login-new-user");
+newUserAdd.addEventListener("click", (e) => {
+  localStorage.setItem("newUser", e);
+  window.location.href = "cart.html";
+});
+
+function loggedUserData() {
+  let userDataList = "";
+  if (userDetails.length === 0) {
+    newUserAdd.classList.remove("hide-login");
+    return;
+  } else {
+    userDataList += `
+<li>Username: ${userDetails[0].username}</li>
+        <li>Email: ${userDetails[0].userEmail}</li>
+        <li>Phone No.: ${userDetails[0].phone}</li>
+        <li>Location: ${userDetails[0].deliveryLocation}</li>
+`;
+
+    document.querySelector(".js-loged-user-data").innerHTML = userDataList;
+
+    newUserAdd.classList.add("hide-login");
+  }
 }
