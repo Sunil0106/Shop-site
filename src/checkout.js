@@ -393,4 +393,15 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
       alert("Failed to send order email. Please try again.");
     });
 });
-console.log(cart);
+
+document
+  .querySelector(".js-search-cart-input")
+  .addEventListener("keyup", (e) => {
+    const productData = e.target.value.trim();
+
+    if (e.key === "Enter" && productData !== "") {
+      localStorage.setItem("userSearch", productData);
+
+      window.location.href = "index.html";
+    }
+  });

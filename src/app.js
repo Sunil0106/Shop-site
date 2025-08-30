@@ -6,6 +6,7 @@ import {
 } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { formatCurrency } from "../src/utils/money.js";
+
 //imports
 
 let html = "";
@@ -64,3 +65,10 @@ document.querySelector(".js-search-product").addEventListener("keyup", (e) => {
 
   searchProduct(userSearchWord);
 });
+
+const searchFromCart = localStorage.getItem("userSearch");
+if (searchFromCart) {
+  document.querySelector(".js-search-product").value = searchFromCart;
+  searchProduct(searchFromCart);
+  localStorage.removeItem("userSearch");
+}
