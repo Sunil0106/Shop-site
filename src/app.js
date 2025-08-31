@@ -4,11 +4,14 @@ import {
   saveToStorage,
   searchProduct,
   userDetails,
+  deleteUserAll,
+  loggedUserData,
 } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { formatCurrency } from "../src/utils/money.js";
 
 //imports
+const newUserAdd = document.querySelector(".js-login-new-user");
 
 let html = "";
 products.forEach((product, index) => {
@@ -55,7 +58,8 @@ document.querySelectorAll(".js-add-to-cart-btn").forEach((button) => {
 
 window.addEventListener("load", () => {
   updateCartQuanityOnPage();
-  loggedUserData();
+
+  loggedUserData(newUserAdd);
 });
 
 function showAddInfo() {
@@ -63,7 +67,7 @@ function showAddInfo() {
 }
 
 document.querySelector(".js-search-product").addEventListener("keyup", (e) => {
-  let userSearchWord = e.target.value;
+  let userSearchWord = e.target.value.trim();
 
   searchProduct(userSearchWord);
 });
@@ -76,27 +80,27 @@ if (searchFromCart) {
 }
 
 //show login page
-const newUserAdd = document.querySelector(".js-login-new-user");
-newUserAdd.addEventListener("click", (e) => {
-  localStorage.setItem("newUser", e);
+
+newUserAdd.addEventListener("click", () => {
+  localStorage.setItem("newUser", "true");
   window.location.href = "cart.html";
 });
 
-function loggedUserData() {
-  let userDataList = "";
-  if (userDetails.length === 0) {
-    newUserAdd.classList.remove("hide-login");
-    return;
-  } else {
-    userDataList += `
-<li>Username: ${userDetails[0].username}</li>
-        <li>Email: ${userDetails[0].userEmail}</li>
-        <li>Phone No.: ${userDetails[0].phone}</li>
-        <li>Location: ${userDetails[0].deliveryLocation}</li>
-`;
+document
+  .querySelector(".js-manage-personal-data")
+  .addEventListener("click", (e) => {
+    localStorage.setItem("manage-data", "true");
+    window.location.href = "cart.html";
+  });
 
-    document.querySelector(".js-loged-user-data").innerHTML = userDataList;
-
-    newUserAdd.classList.add("hide-login");
-  }
-}
+///toggle
+document
+  .querySelector(".js-user-profile-avatar")
+  .addEventListener("click", () => {
+    document
+      .querySelector(".js-user-data-section-home")
+      .classList.toggle("show-option-toggle");
+  });
+document.querySelector(".js-delete-user-data").addEventListener("click", () => {
+  deleteUserAll();
+});

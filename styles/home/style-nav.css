@@ -193,6 +193,7 @@ nav {
 
 /*profile*/
 .user-data-section {
+  display: none;
   position: fixed;
   right: 0;
   background: var(--main-bg);
@@ -229,6 +230,16 @@ nav {
   display: block;
   cursor: pointer;
 }
-.hide-login {
+.hide-log-data {
   display: none;
+}
+.manage-details {
+  cursor: pointer;
+}
+.see-order-history {
+  cursor: pointer;
+}
+
+.show-option-toggle {
+  display: block;
 }

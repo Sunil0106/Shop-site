@@ -24,7 +24,7 @@
   background: var(--cart-clr);
 }
 .form-container form input,
-.form-container form button {
+.form-container form .login-btn {
   width: 100%;
   margin-bottom: 0.8rem;
   font-size: 1rem;
@@ -77,4 +77,19 @@ form #phone-number::-webkit-inner-spin-button,
 
 .hide-login {
   display: none;
+}
+.js-user-data-form {
+  position: relative;
+}
+.js-user-data-form .close-login-page {
+  width: 20px;
+  height: 20px;
+  background: var(--txt-clr);
+  color: var(--cart-clr);
+  border: 2px groove var(--main-bg);
+  position: absolute;
+  right: 0.5rem;
+  border-radius: 0.2rem;
+  line-height: 1rem;
+  cursor: pointer;
 }

@@ -8,14 +8,17 @@ import {
   userDetails,
   orderSummaryDetails,
   placedOrder,
+  deleteUserAll,
+  loggedUserData,
 } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { calTotalUnitPrice, formatCurrency } from "./utils/money.js";
 emailjs.init({
   publicKey: "37jcVH8TxRn_SP7NZ",
 });
+const newUserAdd = document.querySelector(".js-login-new-user");
 //update date-time
-setInterval(ordersDate, 100);
+setInterval(ordersDate, 60000);
 let checkoutHtml = "";
 
 cart.forEach((cartItem) => {
@@ -109,7 +112,13 @@ window.addEventListener("load", () => {
   updateCartCheckoutPage();
   showTotalPrice();
   ordersDate();
+  loggedUserData(newUserAdd);
   newUser();
+  const editDataRequest = localStorage.getItem("manage-data");
+  if (editDataRequest) {
+    showEditData();
+    localStorage.removeItem("manage-data");
+  }
 });
 
 document.querySelectorAll(".js-remove-cart-item").forEach((removeBtn) => {
@@ -177,7 +186,7 @@ function updateTotalPrice(productId) {
   saveToStorage();
   document.querySelector(
     `.js-total-unit-price-${productId}`
-  ).innerHTML = `MVR${totalPrice}`;
+  ).innerHTML = `MVR ${totalPrice}`;
   updateCartCheckoutPage();
   showTotalPrice();
 }
@@ -233,7 +242,7 @@ function userDetailsInput() {
   const showError = document.querySelector(".info");
   const deliveryLocationInput = document.querySelector(".js-delivery-location");
   const deliveryLocation = deliveryLocationInput.value.trim();
-
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const userEmailEl = document.querySelector(".js-user-email");
   const userEmail = userEmailEl.value;
 
@@ -249,8 +258,7 @@ function userDetailsInput() {
     userNumber.length < 5 ||
     !deliveryLocation ||
     !userEmail ||
-    !userEmail.includes("@") ||
-    !userEmail.includes(".")
+    !emailRegex.test(userEmail)
   ) {
     showError.classList.add("show-error-msg");
     showError.innerHTML =
@@ -271,12 +279,15 @@ function userDetailsInput() {
     deliveryLocation: deliveryLocation,
   };
 
-  userDetails.push(userData);
+  if (userDetails.length === 0) {
+    userDetails.push(userData);
+  } else if (userDetails.length === 1) {
+    userDetails[0] = userData;
+  }
 
   localStorage.setItem("userDetailsCart", JSON.stringify(userDetails));
   document.querySelector(".js-form-container").classList.add("hide-login");
-
-  console.log(userDetails);
+  window.location.reload();
 }
 
 document.querySelector(".js-user-data-form").addEventListener("submit", (e) => {
@@ -352,14 +363,13 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
 
   // Keep your original HTML format exactly
 
-  const orders = cart.map((cartItem) => {
-    return {
-      name: cartItem.productName,
-      quantity: cartItem.quantity,
-      unit: cartItem.unit,
-      price: cartItem.totalPrice,
-    };
-  });
+  const orders = cart
+    .map((cartItem) => {
+      return `
+    ${cartItem.productName}-(${cartItem.quantity}${cartItem.unit})-${cartItem.totalPrice}
+    `;
+    })
+    .join("\n");
 
   // Send email with EmailJS
   emailjs
@@ -370,7 +380,7 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
       delivery_method: order["delivery-method"],
       payment_method: order["payment-method"],
       total_amount: order["bill-amount"], // keep format as string with 2 decimals
-      order_id: order["order-time"] + "leban" + order["order-date"],
+      order_id: `${order["order-time"]}-"leban"-${order["order-date"]}`,
       orders: orders,
       email: user["userEmail"],
     })
@@ -379,7 +389,7 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
       alert(`Hey ${user.username}, your order confirmation has been sent!`);
 
       // Save cart to history safely
-      placedOrder = cart;
+      placedOrder.push([...cart]);
       localStorage.setItem("order-history", JSON.stringify(placedOrder));
 
       // Clear cart
@@ -387,7 +397,6 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
       saveToStorage(cart);
       updateCartCheckoutPage();
       showTotalPrice();
-      console.log(placedOrder);
     })
     .catch((error) => {
       console.error("Failed to send order email:", error);
@@ -415,3 +424,26 @@ function newUser() {
     localStorage.removeItem("newUser");
   }
 }
+document
+  .querySelector(".js-user-profile-cart")
+  .addEventListener("click", () => {
+    document
+      .querySelector(".js-user-data-section-cart")
+      .classList.toggle("show-option-toggle");
+  });
+document.querySelector(".js-delete-user-data").addEventListener("click", () => {
+  deleteUserAll();
+});
+
+document.querySelector(".js-login-new-user").addEventListener("click", () => {
+  newUser();
+});
+
+function showEditData() {
+  document.querySelector(".js-form-container").classList.remove("hide-login");
+}
+document
+  .querySelector(".js-manage-personal-data")
+  .addEventListener("click", () => {
+    showEditData();
+  });

@@ -104,6 +104,9 @@
     color: var(--main-bg);
     opacity: 1;
   }
+  .user-data-section {
+    top: 80px;
+  }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 765px) {
@@ -251,5 +254,14 @@
   }
   .content-grid-container {
     gap: 0.3rem;
+  }
+  .user-data-section {
+    top: 70px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .user-data-section {
+    right: 18.4%;
   }
 }

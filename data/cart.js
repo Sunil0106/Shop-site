@@ -144,3 +144,34 @@ export function searchProduct(productUserVal) {
 
   container.innerHTML = userItem;
 }
+///delete
+
+export function deleteUserAll() {
+  if (userDetails.length === 1) {
+    const confirm = window.confirm("Are sure to delete user data?");
+    if (confirm) {
+      localStorage.removeItem("userDetailsCart");
+      window.location.reload();
+    }
+  } else {
+    window.alert("User not exist!");
+  }
+}
+export function loggedUserData(newUserAdd) {
+  let userDataList = "";
+  if (userDetails.length === 0) {
+    newUserAdd.classList.remove("hide-log-data");
+    return;
+  } else {
+    userDataList += `
+<li>Username: ${userDetails[0].username}</li>
+        <li>Email: ${userDetails[0].userEmail}</li>
+        <li>Phone No.: ${userDetails[0].phone}</li>
+        <li>Location: ${userDetails[0].deliveryLocation}</li>
+`;
+
+    document.querySelector(".js-loged-user-data").innerHTML = userDataList;
+
+    newUserAdd.classList.add("hide-log-data");
+  }
+}

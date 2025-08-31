@@ -56,7 +56,7 @@
               <div class="cart-qcona"><span class="cart-quantity js-cart-quantity">0</span></div>
             </a>
           </div>
-          <div class="user-avatar">
+          <div class="user-avatar js-user-profile-cart">
            <div class="user-image">
               <i class="fa-solid fa-user-astronaut"></i>
             </div>
@@ -73,6 +73,7 @@
     <main>
       <div class="form-container hide-login js-form-container">
         <form class="js-user-data-form">
+          <p class="close-login-page js-hide-login-page"><i class="fa-solid fa-xmark"></i></p>
           <h3>Welcome, Guest!</h3>
           <p class="info">
             Please fill in your details for checkout now and future orders.
@@ -106,10 +107,28 @@
             class="js-delivery-location"
             placeholder="Delivery address"
           />
-          <button type="submit">Save</button>
+          <button type="submit" class="login-btn">Save</button>
         </form>
       </div>
+<section class="user-data-section js-user-data-section-cart">
+      <div class="buttons">
+        <button class="delete-user-data js-delete-user-data">Delete</button>
+      </div>
+      <ul class="js-loged-user-data"></ul>
 
+      <div class="js-login-new-user hide-log-data login-new-user">
+        Add User Data
+      </div>
+      <div class="edit-personal-details">
+        <p class="manage-details js-manage-personal-data">
+          Manage personal details<i class="fa-solid fa-angle-right"></i>
+        </p>
+        <p class="see-order-history">Order History</p>
+      </div>
+    </section>
+      <div class="user-history-data">
+        
+      </div>
       <!-- contains whole content -->
       <div class="cart-content">
         <!-- contains products&quantity -->
