@@ -372,14 +372,12 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
 
   // Keep your original HTML format exactly
 
-  const orders = cart
-    .map((cartItem) => {
-      return `
-    ${cartItem.productName}-(${cartItem.quantity}${cartItem.unit})-${cartItem.totalPrice}||
-    `;
-    })
-    .join("\n");
-
+  const orders = cart.map((cartItem) => ({
+    name: cartItem.productName,
+    quantity: cartItem.quantity,
+    unit: cartItem.unit,
+    price: cartItem.totalPrice,
+  }));
   // Send email with EmailJS
   emailjs
     .send("lebanneyOrders", "template_md0geov", {
@@ -513,6 +511,7 @@ document.querySelector(".js-delete-history").addEventListener("click", () => {
     if (confirm) {
       placedOrder.length = 0;
       localStorage.setItem("order-history", JSON.stringify(placedOrder));
+      window.location.reload();
     }
   }
 });

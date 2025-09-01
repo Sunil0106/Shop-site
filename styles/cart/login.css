@@ -107,6 +107,7 @@ form #phone-number::-webkit-inner-spin-button,
   right: 0;
   background: var(--main-bg);
   color: var(--txt-clr);
+  overflow-y: scroll;
 }
 .order-container {
   width: 100%;
