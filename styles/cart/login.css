@@ -108,6 +108,7 @@ form #phone-number::-webkit-inner-spin-button,
   background: var(--main-bg);
   color: var(--txt-clr);
   overflow-y: scroll;
+  padding-top: 85px;
 }
 .order-container {
   width: 100%;
