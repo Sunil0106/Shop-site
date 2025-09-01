@@ -93,3 +93,54 @@ form #phone-number::-webkit-inner-spin-button,
   line-height: 1rem;
   cursor: pointer;
 }
+.history-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--main-bg);
+  color: var(--txt-clr);
+}
+.order-container {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: var(--cart-clr);
+
+  border-radius: 0.5rem;
+}
+.order-container ul {
+  list-style: none;
+}
+.order-container ul li {
+  font-size: 0.9rem;
+}
+.hide-history {
+  display: none;
+}
+.button-history {
+  position: fixed;
+  top: 100px;
+  right: 30%;
+}
+.button-history button {
+  border: 2px groove var(--cart-clr);
+  color: var(--cart-clr);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.see-order-history {
+  cursor: pointer;
+}
+.empty-history {
+  font-size: 2rem;
+}

@@ -119,6 +119,15 @@ window.addEventListener("load", () => {
     showEditData();
     localStorage.removeItem("manage-data");
   }
+
+  const seeOrderHistory = localStorage.getItem("see-order-history");
+  if (seeOrderHistory) {
+    document
+      .querySelector(".js-order-history-page")
+      .classList.remove("hide-history");
+    showOrderHistory();
+    localStorage.removeItem("see-order-history");
+  }
 });
 
 document.querySelectorAll(".js-remove-cart-item").forEach((removeBtn) => {
@@ -366,7 +375,7 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
   const orders = cart
     .map((cartItem) => {
       return `
-    ${cartItem.productName}-(${cartItem.quantity}${cartItem.unit})-${cartItem.totalPrice}
+    ${cartItem.productName}-(${cartItem.quantity}${cartItem.unit})-${cartItem.totalPrice}||
     `;
     })
     .join("\n");
@@ -395,6 +404,7 @@ document.querySelector(".js-checkout-btn").addEventListener("click", () => {
       // Clear cart
       cart.length = 0;
       saveToStorage(cart);
+
       updateCartCheckoutPage();
       showTotalPrice();
     })
@@ -435,15 +445,95 @@ document.querySelector(".js-delete-user-data").addEventListener("click", () => {
   deleteUserAll();
 });
 
-document.querySelector(".js-login-new-user").addEventListener("click", () => {
-  newUser();
-});
-
 function showEditData() {
   document.querySelector(".js-form-container").classList.remove("hide-login");
+  document.querySelector("js-user");
+  document;
 }
 document
   .querySelector(".js-manage-personal-data")
   .addEventListener("click", () => {
     showEditData();
+    document
+      .querySelector(".js-user-data-section-cart")
+      .classList.remove("show-option-toggle");
   });
+
+//showOrderHistory
+function showOrderHistory() {
+  let historyHtml = "";
+  placedOrder.forEach((order, i) => {
+    if (!order || order.length === 0) {
+      return;
+    }
+
+    historyHtml += `
+<div class="order-container js-order-history-container">
+<h3>
+Order ${i + 1}#Lebanney
+</h3>
+<ul>
+${order
+  .map((item) => {
+    return `<li>
+      ${item.productName}-${item.quantity}${item.unit}-MVR ${item.totalPrice}
+    </li>`;
+  })
+  .join("\n")}
+</ul>
+
+</div>
+
+`;
+  });
+
+  if (historyHtml === "") {
+    historyHtml = `<p class='empty-history'>No orders yet.</p>`;
+  }
+  document.querySelector(".js-order-history-box").innerHTML = historyHtml;
+}
+
+document
+  .querySelector(".js-see-order-history")
+  .addEventListener("click", () => {
+    document
+      .querySelector(".js-order-history-page")
+      .classList.remove("hide-history");
+    showOrderHistory();
+    document
+      .querySelector(".js-user-data-section-cart")
+      .classList.remove("show-option-toggle");
+  });
+
+document.querySelector(".js-delete-history").addEventListener("click", () => {
+  if (placedOrder.length === 0 || !placedOrder) {
+    window.alert("Order history is empty");
+  } else {
+    const confirm = window.confirm("Are you sure to detete you order history");
+    if (confirm) {
+      placedOrder.length = 0;
+      localStorage.setItem("order-history", JSON.stringify(placedOrder));
+    }
+  }
+});
+
+document
+  .querySelector(".js-close-order-history")
+  .addEventListener("click", () => {
+    document
+      .querySelector(".js-order-history-page")
+      .classList.add("hide-history");
+  });
+
+///hide-login-page
+document.querySelector(".js-hide-login-page").addEventListener("click", () => {
+  document.querySelector(".js-form-container").classList.add("hide-login");
+});
+
+document.querySelector(".js-login-new-user").addEventListener("click", () => {
+  document;
+  document.querySelector(".js-form-container").classList.remove("hide-login");
+  document
+    .querySelector(".js-user-data-section-cart")
+    .classList.remove("show-option-toggle");
+});

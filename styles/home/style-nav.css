@@ -243,3 +243,6 @@ nav {
 .show-option-toggle {
   display: block;
 }
+.see-order-history {
+  cursor: pointer;
+}

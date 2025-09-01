@@ -104,3 +104,10 @@ document
 document.querySelector(".js-delete-user-data").addEventListener("click", () => {
   deleteUserAll();
 });
+
+document
+  .querySelector(".js-see-order-history")
+  .addEventListener("click", () => {
+    localStorage.setItem("see-order-history", "true");
+    window.location.href = "cart.html";
+  });
