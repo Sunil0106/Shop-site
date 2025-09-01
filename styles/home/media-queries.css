@@ -258,6 +258,13 @@
   .user-data-section {
     top: 70px;
   }
+  .history-page {
+    padding-top: 75px !important;
+  }
+  .button-content {
+    right: 0 !important;
+    top: 80px !important;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
