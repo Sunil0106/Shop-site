@@ -834,7 +834,7 @@ export const products = [
     name: `KOREAN HOT CHILLI PASTE 500G`,
     description: "Fermented hot pepper paste",
     image: "Images/korean-chilli-paste.jpeg",
-    priceCents: 1400,
+    priceCents: 14000,
     category: "korean sauce",
     unit: ["pcs"],
   },
