@@ -134,7 +134,7 @@ export function searchProduct(productUserVal) {
             
               <button
               data-id="${product.productId}"
-              class="add-to-cart-btn js-add-to-cart-btn">Add to cart</button>
+              class="add-to-cart-btn js-add-to-cart-btn js-add-from-search">Add to cart</button>
               </div>
              
             </div>

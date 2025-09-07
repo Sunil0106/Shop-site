@@ -41,20 +41,6 @@ document.querySelector(".content-grid-container").innerHTML = html;
 function updateCartQuanityOnPage() {
   document.querySelector(".js-cart-quantity").innerHTML = updateCart();
 }
-document.querySelectorAll(".js-add-to-cart-btn").forEach((button) => {
-  button.addEventListener("click", () => {
-    const productId = button.dataset.id;
-
-    //info
-    document.querySelector(".js-added-info").classList.add("hide-info");
-    setTimeout(() => {
-      showAddInfo();
-    }, 500);
-    addToCart(productId);
-    saveToStorage();
-    updateCartQuanityOnPage();
-  });
-});
 
 window.addEventListener("load", () => {
   updateCartQuanityOnPage();
@@ -110,4 +96,23 @@ document
   .addEventListener("click", () => {
     localStorage.setItem("see-order-history", "true");
     window.location.href = "cart.html";
+  });
+
+// Works for all products: initial + searched
+document
+  .querySelector(".content-grid-container")
+  .addEventListener("click", (e) => {
+    if (e.target.classList.contains("js-add-to-cart-btn")) {
+      const productId = e.target.dataset.id;
+
+      //info
+      document.querySelector(".js-added-info").classList.add("hide-info");
+      setTimeout(() => {
+        showAddInfo();
+      }, 500);
+
+      addToCart(productId);
+      saveToStorage();
+      updateCartQuanityOnPage();
+    }
   });
