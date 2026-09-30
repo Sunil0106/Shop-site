@@ -1,1 +1,3174 @@
-[{"productId":"8888399612064","name":"Hibis Box Tissue","description":"soft white facial tissue","image":"Images/hibis-tissue.png","priceCents":1200,"category":"households","unit":["pcs"]},{"productId":"8690216360108","name":"Fatih Dust-Free Erasers","description":"Phthalate free, Latex-free","image":"Images/fatih-erasers.webp","priceCents":400,"category":"stationery","unit":["pcs","dozon"]},{"productId":"8901180673133","name":"Faber-Castell","description":"Sphere Mathematical Drawing instrument Box","image":"Images/castell-geometry.jpg","priceCents":4500,"category":"stationery","unit":["pcs"]},{"productId":"9556233132038","name":"Campap","description":"Spiral notebook","image":"Images/campap-notebook.webp","priceCents":5000,"category":"stationery","unit":["pcs","dozon"]},{"productId":"sausage-019","name":"CHICKEN SAUSAGES 340G","description":"made by pure chicken meat","image":"Images/sausages.jpeg","priceCents":2600,"category":"food & meat","unit":["pcs"]},{"productId":"seara-drums","name":"Seara Chicken Drumsticks 900g","description":"neat & clean meat","image":"Images/seara-drumsticks.jpeg","priceCents":8300,"category":"food & meat","unit":["pcs"]},{"productId":"caddairyM","name":"CADBURY DAIRY MILK 5.5G","description":"Dairy & chocolate","image":"Images/cadbury5.5.avif","priceCents":500,"category":"food & chocolate","unit":["pcs"]},{"productId":"40111445","name":"M&M's PEANUT GEMS","description":"Chocolate covered peanut in a sugar shell ","image":"Images/M&M-peanut.jpg","priceCents":1800,"category":"candy","unit":["pcs"]},{"productId":"40111490","name":"M&M's CHOCOLATE GEMS","description":"Chocolate in a sugar shell","image":"Images/M&M-chocolate.jpg","priceCents":1800,"category":"candy","unit":["pcs"]},{"productId":"726165663040","name":"APOLLO WAFER DENGAN KRIM COKLAT","description":"Milk chocolate wafer","image":"Images/apollo-waffer-krim.jpg","priceCents":150,"category":"candy","unit":["pcs"]},{"productId":"9555401204874","name":"APOLLO LAYER CAKE-18G CHOCOLATE","description":"Kek coklat berlapis","image":"Images/apollo-layer-chocolate.jpg","priceCents":200,"category":"cake","unit":["pcs","case"]},{"productId":"8888166336599","name":"NITTO WAFER CHOCOLATE 17G","description":"Wafer Krim Cockelat Salut Cokelat","image":"Images/nitto-wafer-chocolate.jpg","priceCents":300,"category":"chocolate","unit":["pcs"]},{"productId":"726165091065","name":"APOLLO LAYER CAKE-18G PANDAN","description":"Kek Lapis Persia Pandan","image":"Images/apollo-layer-pandan.jpg","priceCents":200,"category":"cake","unit":["pcs","case"]},{"productId":"726165071036","name":"APOLLO LAYER CAKE-18G STRAWBERRY","description":"Kek Lapis Strawberi","image":"Images/apollo-layer-strawberry.jpg","priceCents":200,"category":"cake","unit":["pcs","case"]},{"productId":"80768258","name":"KINDER JOY GIRL","description":"Rich in milk with surprise","image":"Images/kinder-joy-girl.jpeg","priceCents":1800,"category":"cake","unit":["pcs"]},{"productId":"80974482","name":"KINDER JOY BOY","description":"Rich in milk with surprise","image":"Images/kinder-joy-boy.jpeg","priceCents":1800,"category":"cake","unit":["pcs"]},{"productId":"jeram0001001","name":"JERAM'S FRUIT FLAVOURED PUDDING CUP","description":"","image":"Images/jeram-pudding.jpeg","priceCents":800,"category":"cake","unit":["pcs"]},{"productId":"8902433008368","name":"BOOMER STRAWBERRY FLAVOUR BUBBLE GUM","description":"","image":"Images/boomer-gum.jpeg","priceCents":100,"category":"gum","unit":["pcs"]},{"productId":"tifanny01","name":"TIFFANY DELUXE TOFFEE ","description":"","image":"Images/tiffany-toffee.jpeg","priceCents":150,"category":"candy","unit":["pcs"]},{"productId":"ricomixfff","name":"RICO MIXED FRUIT JELLY PUDDING","description":"","image":"Images/rico-jelly.jpeg","priceCents":200,"category":"jelly","unit":["pcs"]},{"productId":"8908010213903","name":"MAKINO BLACK PEPPER PEANUTS","description":"Rich in Protein","image":"Images/makino-blackpeper-peanut.jpeg","priceCents":1000,"category":"snack","unit":["pcs"]},{"productId":"8908010213880","name":"MAKINO GARLIC PEANUTS","description":"Rich in Protein","image":"Images/makino-garlic-peanut.jpeg","priceCents":1000,"category":"snack","unit":["pcs"]},{"productId":"6914973002326","name":"SNICKERS 35G","description":"Kacng, karama dan nougat lembut bersalut cokelat susu penuts","image":"Images/snickers35g.jpeg","priceCents":1400,"category":"chocolate","unit":["pcs"]},{"productId":"6914973002357","name":"SNICKERS 51G","description":"Kacng, karama dan nougat lembut bersalut cokelat susu penuts","image":"Images/snickers51g.jpeg","priceCents":1600,"category":"chocolate","unit":["pcs"]},{"productId":"5900951311321","name":"MAR's Filled Chocolate","description":"Milk chocolate coating","image":"Images/mars-chocolate.jpeg","priceCents":1500,"category":"chocolate","unit":["pcs"]}]
+[
+  {
+    "productId": "8888399612064",
+    "name": "Hibis Box Tissue",
+    "description": "soft white facial tissue",
+    "image": "Images/hibis-tissue.png",
+    "priceCents": 1200,
+    "category": "households",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8690216360108",
+    "name": "Fatih Dust-Free Erasers",
+    "description": "Phthalate free, Latex-free",
+    "image": "Images/fatih-erasers.webp",
+    "priceCents": 400,
+    "category": "stationery",
+    "unit": [
+      "pcs",
+      "dozon"
+    ]
+  },
+  {
+    "productId": "8901180673133",
+    "name": "Faber-Castell",
+    "description": "Sphere Mathematical Drawing instrument Box",
+    "image": "Images/castell-geometry.jpg",
+    "priceCents": 4500,
+    "category": "stationery",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556233132038",
+    "name": "Campap",
+    "description": "Spiral notebook",
+    "image": "Images/campap-notebook.webp",
+    "priceCents": 5000,
+    "category": "stationery",
+    "unit": [
+      "pcs",
+      "dozon"
+    ]
+  },
+  {
+    "productId": "sausage-019",
+    "name": "CHICKEN SAUSAGES 340G",
+    "description": "made by pure chicken meat",
+    "image": "Images/sausages.jpeg",
+    "priceCents": 2600,
+    "category": "food & meat",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "seara-drums",
+    "name": "Seara Chicken Drumsticks 900g",
+    "description": "neat & clean meat",
+    "image": "Images/seara-drumsticks.jpeg",
+    "priceCents": 8300,
+    "category": "food & meat",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "caddairyM",
+    "name": "CADBURY DAIRY MILK 5.5G",
+    "description": "Dairy & chocolate",
+    "image": "Images/cadbury5.5.avif",
+    "priceCents": 500,
+    "category": "food & chocolate",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "40111445",
+    "name": "M&M's PEANUT GEMS",
+    "description": "Chocolate covered peanut in a sugar shell ",
+    "image": "Images/M&M-peanut.jpg",
+    "priceCents": 1800,
+    "category": "candy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "40111490",
+    "name": "M&M's CHOCOLATE GEMS",
+    "description": "Chocolate in a sugar shell",
+    "image": "Images/M&M-chocolate.jpg",
+    "priceCents": 1800,
+    "category": "candy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "726165663040",
+    "name": "APOLLO WAFER DENGAN KRIM COKLAT",
+    "description": "Milk chocolate wafer",
+    "image": "Images/apollo-waffer-krim.jpg",
+    "priceCents": 150,
+    "category": "candy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9555401204874",
+    "name": "APOLLO LAYER CAKE-18G CHOCOLATE",
+    "description": "Kek coklat berlapis",
+    "image": "Images/apollo-layer-chocolate.jpg",
+    "priceCents": 200,
+    "category": "cake",
+    "unit": [
+      "pcs",
+      "case"
+    ]
+  },
+  {
+    "productId": "8888166336599",
+    "name": "NITTO WAFER CHOCOLATE 17G",
+    "description": "Wafer Krim Cockelat Salut Cokelat",
+    "image": "Images/nitto-wafer-chocolate.jpg",
+    "priceCents": 300,
+    "category": "chocolate",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "726165091065",
+    "name": "APOLLO LAYER CAKE-18G PANDAN",
+    "description": "Kek Lapis Persia Pandan",
+    "image": "Images/apollo-layer-pandan.jpg",
+    "priceCents": 200,
+    "category": "cake",
+    "unit": [
+      "pcs",
+      "case"
+    ]
+  },
+  {
+    "productId": "726165071036",
+    "name": "APOLLO LAYER CAKE-18G STRAWBERRY",
+    "description": "Kek Lapis Strawberi",
+    "image": "Images/apollo-layer-strawberry.jpg",
+    "priceCents": 200,
+    "category": "cake",
+    "unit": [
+      "pcs",
+      "case"
+    ]
+  },
+  {
+    "productId": "80768258",
+    "name": "KINDER JOY GIRL",
+    "description": "Rich in milk with surprise",
+    "image": "Images/kinder-joy-girl.jpeg",
+    "priceCents": 1800,
+    "category": "cake",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "80974482",
+    "name": "KINDER JOY BOY",
+    "description": "Rich in milk with surprise",
+    "image": "Images/kinder-joy-boy.jpeg",
+    "priceCents": 1800,
+    "category": "cake",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "jeram0001001",
+    "name": "JERAM'S FRUIT FLAVOURED PUDDING CUP",
+    "description": "",
+    "image": "Images/jeram-pudding.jpeg",
+    "priceCents": 800,
+    "category": "cake",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8902433008368",
+    "name": "BOOMER STRAWBERRY FLAVOUR BUBBLE GUM",
+    "description": "",
+    "image": "Images/boomer-gum.jpeg",
+    "priceCents": 100,
+    "category": "gum",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "tifanny01",
+    "name": "TIFFANY DELUXE TOFFEE ",
+    "description": "",
+    "image": "Images/tiffany-toffee.jpeg",
+    "priceCents": 150,
+    "category": "candy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "ricomixfff",
+    "name": "RICO MIXED FRUIT JELLY PUDDING",
+    "description": "",
+    "image": "Images/rico-jelly.jpeg",
+    "priceCents": 200,
+    "category": "jelly",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908010213903",
+    "name": "MAKINO BLACK PEPPER PEANUTS",
+    "description": "Rich in Protein",
+    "image": "Images/makino-blackpeper-peanut.jpeg",
+    "priceCents": 1000,
+    "category": "snack",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908010213880",
+    "name": "MAKINO GARLIC PEANUTS",
+    "description": "Rich in Protein",
+    "image": "Images/makino-garlic-peanut.jpeg",
+    "priceCents": 1000,
+    "category": "snack",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6914973002326",
+    "name": "SNICKERS 35G",
+    "description": "Kacng, karama dan nougat lembut bersalut cokelat susu penuts",
+    "image": "Images/snickers35g.jpeg",
+    "priceCents": 1400,
+    "category": "chocolate",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6914973002357",
+    "name": "SNICKERS 51G",
+    "description": "Kacng, karama dan nougat lembut bersalut cokelat susu penuts",
+    "image": "Images/snickers51g.jpeg",
+    "priceCents": 1600,
+    "category": "chocolate",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5900951311321",
+    "name": "MAR's Filled Chocolate",
+    "description": "Milk chocolate coating",
+    "image": "Images/mars-chocolate.jpeg",
+    "priceCents": 1500,
+    "category": "chocolate",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5000159559485",
+    "name": "TWIX CHOCOLATE TWIN 50G",
+    "description": "Chocolate bar",
+    "image": "Images/twix-choclate.jpg",
+    "priceCents": 1600,
+    "category": "chocolate",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8858694621122",
+    "name": "TOPCO CONE VANILA",
+    "description": "Wafer Cone Filled With Milk Cream and Ceral and Biscuits",
+    "image": "Images/topco-cone-vanila.jpeg",
+    "priceCents": 500,
+    "category": "chocolate",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8858694621870",
+    "name": "TOPCO CONE CHOCOLATE",
+    "description": "Wafer Cone Filled With Milk Cream and Ceral and Biscuits",
+    "image": "Images/topco-cone-chocolate.jpeg",
+    "priceCents": 500,
+    "category": "chocolate",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8858694621092",
+    "name": "TOPCO CONE CHOCOLATE FUDGE",
+    "description": "Wafer Cone Filled With Milk Cream and Ceral and Biscuits",
+    "image": "Images/topco-cone-fudge.jpeg",
+    "priceCents": 500,
+    "category": "chocolate",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9002975394017",
+    "name": "HARIBO GOLDBEARS FRUIT FLAVOURED JELLIES",
+    "description": "Kids and grown-ups love it so...",
+    "image": "Images/haribo-goldbears.jpeg",
+    "priceCents": 2200,
+    "category": "chocolate",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6291007700459",
+    "name": "NUTRO VANILA CREAM BISCUITS",
+    "description": "Rich Creamy Filling - Wow! Yummy!!",
+    "image": "Images/nutro-vanila.jpeg",
+    "priceCents": 250,
+    "category": "biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6291007907315",
+    "name": "NUTRO CHOCOLATE CREAM BISCUITS",
+    "description": "Rich Creamy Filling - Wow! Yummy!!",
+    "image": "Images/nutro-chocolate.jpeg",
+    "priceCents": 250,
+    "category": "biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556619129867",
+    "name": "RICO TOBO JELLY DRINK",
+    "description": "Available in all fruit flavour",
+    "image": "Images/tobo-jelly-drink.jpeg",
+    "priceCents": 500,
+    "category": "jelly",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8887290101004",
+    "name": "MacCoffee-The original coffee mix",
+    "description": "",
+    "image": "Images/mac-coffee.jpeg",
+    "priceCents": 300,
+    "category": "coffee",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8888240001078",
+    "name": "SUPER NUTREMILL CHOCOLATE CEREAL",
+    "description": "Instant Ceral Drink",
+    "image": "Images/nutremil-cereal.jpeg",
+    "priceCents": 500,
+    "category": "cereal",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5063305003126",
+    "name": "LIPTON TEH HALIA MIX TEA",
+    "description": "Ten Campuran Segera Instant Tea Mix",
+    "image": "Images/litpon-tenhalia.jpeg",
+    "priceCents": 300,
+    "category": "tea",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "nescafe-classic",
+    "name": "NESCAFE CLASSIC STICK PACK 2G",
+    "description": "Nestle-Good Food, Good life",
+    "image": "Images/nescafe-classic2g.jpeg",
+    "priceCents": 300,
+    "category": "coffee",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "nescafe-coffeemate",
+    "name": "NESTLE COFFEE MATE 2G",
+    "description": "0% Cholesterol per Serving",
+    "image": "Images/nestle-coffeemate2g.jpeg",
+    "priceCents": 300,
+    "category": "coffee",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8904585425758",
+    "name": "NATURALS MIXTURE 70G",
+    "description": "Groundnut, Gramflour, Chilli Powder, Asafetida Powders",
+    "image": "Images/nestle-coffeemate2g.jpeg",
+    "priceCents": 300,
+    "category": "coffee",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023118013",
+    "name": "ORIENTAL SUPER RING 14G",
+    "description": "Cheese flavour snacks",
+    "image": "Images/super-ring14g.jpeg",
+    "priceCents": 300,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556241000176",
+    "name": "PICK FINE",
+    "description": "Snek ku",
+    "image": "Images/pick-fine.jpeg",
+    "priceCents": 200,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8996001317020",
+    "name": "BETTER SANDWICH BISCUITS",
+    "description": "Biskuit Sandwich Lapis Cokelat dengan Krim Vanillas",
+    "image": "Images/better-biscuits.jpeg",
+    "priceCents": 300,
+    "category": "biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023228170",
+    "name": "ORIENTAL CHICKEN RING 14G",
+    "description": "Snek Perisa Ayam",
+    "image": "Images/chicken-ring14g.jpeg",
+    "priceCents": 300,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "020916081115",
+    "name": "TAI SUN ORIENTAL MIX 40G",
+    "description": "Naturally cholesterol free, Trans Fat Free",
+    "image": "Images/taisun-orientalmix.jpeg",
+    "priceCents": 900,
+    "category": "snacks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062331142",
+    "name": "MR.POTATO CRIPS-THE MACHO BARBECUE 145G",
+    "description": "",
+    "image": "Images/mr.themacha.png",
+    "priceCents": 3500,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023228156",
+    "name": "ORIENTAL ROSTIK 60G",
+    "description": "Chicken Curry Flavour Rice Crackers",
+    "image": "Images/rostik.jpeg",
+    "priceCents": 2000,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908010213811",
+    "name": "MAKINO CORN MUNCH CREAM & ONION 150G",
+    "description": "Made from Corn & Onions",
+    "image": "Images/corn-munch-150g.jpeg",
+    "priceCents": 2900,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023331085",
+    "name": "ORIENTAL CHEESE BALLS 14G",
+    "description": "Cheese with natural color",
+    "image": "Images/cheese-balls14g.jpeg",
+    "priceCents": 300,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908010213835",
+    "name": "MAKINO TANDOORI PEANUTS 150G",
+    "description": "Rich in Protein",
+    "image": "Images/makino-tandoori150g.jpeg",
+    "priceCents": 2800,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062331159",
+    "name": "MR.POTATO CRISPS-HOT & SPICY 160G",
+    "description": "",
+    "image": "Images/mr.hot&spicy160g.jpeg",
+    "priceCents": 3500,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8999178840230",
+    "name": "CHUBA CASSAVA CHIPS CHILLI BALADO FLAVOR",
+    "description": "",
+    "image": "Images/chuba-chillibalado.jpg",
+    "priceCents": 3500,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556196000153",
+    "name": "JACKNJIL POTATO CHIPS PERISA CHILLI SALSA 60G",
+    "description": "",
+    "image": "Images/jackngil-chili-salsa.jpeg",
+    "priceCents": 2700,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023210229",
+    "name": "JACKER POTATO CHIPS BARBECUE 60G",
+    "description": "",
+    "image": "Images/jacker-bbq-chips.jpeg",
+    "priceCents": 2300,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4792024011754",
+    "name": "NESTLE MILO DRINK 180ML",
+    "description": "Chocolate Malt Food Drink",
+    "image": "Images/milo-drink.jpeg",
+    "priceCents": 950,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "98993007006347",
+    "name": "INDOMILK KIDS FULL CREAM 115ML",
+    "description": "No Sugar added",
+    "image": "Images/indomilk-kid.jpeg",
+    "priceCents": 600,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8993007000253",
+    "name": "INDOMILK KIDS STRAWBERRY 115ML",
+    "description": "No Sugar added",
+    "image": "Images/indomilk-strawberry.jpeg",
+    "priceCents": 600,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8993007000215",
+    "name": "INDOMILK KIDS VANILLA 115ML",
+    "description": "No Sugar added",
+    "image": "Images/indomilk-vanila.jpeg",
+    "priceCents": 600,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556570105139",
+    "name": "100 PLUS ORIGINAL 325ML",
+    "description": "Sugar Free",
+    "image": "Images/100plus-original.jpeg",
+    "priceCents": 2000,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556001047175",
+    "name": "NESCAFE ORIGINAL INTESITY 250ML",
+    "description": "Low Fat Milk Coffee Drink",
+    "image": "Images/nescafe-intensity.jpeg",
+    "priceCents": 1500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6224010239425",
+    "name": "SOLYMAR NECTAR CHEERFUL PINK-GUAVA DRINK",
+    "description": "Free Of Preservatives",
+    "image": "Images/solymar-pinkguava.jpeg",
+    "priceCents": 1000,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8961008237084",
+    "name": "NESTLE FRUITA VITALS KINNOW NECTOR 180ML",
+    "description": "",
+    "image": "Images/fruit-vitals-kinnow.jpeg",
+    "priceCents": 700,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8961008237091",
+    "name": "NESTLE FRUITA VITALS GUAVA NECTOR 180ML",
+    "description": "",
+    "image": "Images/fruit-vitals-guava.jpeg",
+    "priceCents": 700,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6281034016210",
+    "name": "RANI MANGO FRUIT DRINK 200ML",
+    "description": "",
+    "image": "Images/rani-drink.jpeg",
+    "priceCents": 1000,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "90162602",
+    "name": "REDBULL ENERGY DRINK 250ML",
+    "description": "Vitalizes body and mind",
+    "image": "Images/red-bull.jpeg",
+    "priceCents": 4000,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556404011032",
+    "name": "MOUNTAIN DEW 320ML",
+    "description": "Carbonated Lemon Flavoured Drink",
+    "image": "Images/mountain-dew.jpeg",
+    "priceCents": 1500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8410128120979",
+    "name": "PASCUAL GREEK STYLE PLAIN SWEETED YOGURT 120G",
+    "description": "Plain Sweetend/Natural Azucarado",
+    "image": "Images/greek-plain-yogurt.jpeg",
+    "priceCents": 1500,
+    "category": "yogurt",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8410128123833",
+    "name": "PASCUAL YOGURT STRAWBERRY FLAVOUR 120G",
+    "description": "Strawberry/Fresa",
+    "image": "Images/pascual-straberry.jpeg",
+    "priceCents": 1500,
+    "category": "yogurt",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908001658041",
+    "name": "O'CEAN FRUIT DRINK 500ML",
+    "description": "High in Vitamin C",
+    "image": "Images/ocean-drink.jpeg",
+    "priceCents": 2200,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101331044",
+    "name": "SPRITE LEMON-LIME 1250ML",
+    "description": "No Caffeine 100% Natural Flvaours",
+    "image": "Images/sprite-1250.jpeg",
+    "priceCents": 3500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101331020",
+    "name": "FANTA ORANGE FLAVOURED 1.25L",
+    "description": "",
+    "image": "Images/fanta-orange1250.jpeg",
+    "priceCents": 3500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8410128763985",
+    "name": "PASCUAL YOGURT PLAIN NATURAL 120G",
+    "description": "Plain/Natural",
+    "image": "Images/pascual-plain.jpeg",
+    "priceCents": 1500,
+    "category": "yogurt",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101330528",
+    "name": "SPRITE LEMON-LIME 500ML",
+    "description": "No Caffeine 100% Natural Flvaours",
+    "image": "Images/sprite-500.jpeg",
+    "priceCents": 1500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101330542",
+    "name": "FANTA ORAGNE 500ML",
+    "description": "",
+    "image": "Images/fanta-orange500ml.jpeg",
+    "priceCents": 1500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4008287929829",
+    "name": "KROMBACHER 500ML",
+    "description": "Pils Non-alcoholic Pils Sans Alcool",
+    "image": "Images/krombacker-beer.jpeg",
+    "priceCents": 3200,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908022632136",
+    "name": "3 SISTERS STRAWBERRY NON-ALCOHOLIC BEER 330ML",
+    "description": "",
+    "image": "Images/3sister-strawberry.jpeg",
+    "priceCents": 3000,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908022632099",
+    "name": "3 SISTERS GERMAN-LAGER NON-ALCOHOLIC BEER 330ML",
+    "description": "",
+    "image": "Images/3sister-germanlager.jpeg",
+    "priceCents": 3000,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908022632112",
+    "name": "3 SISTERS KIWI NON-ALCOHOLIC BEER 330ML",
+    "description": "",
+    "image": "Images/3sister-kiwi.jpeg",
+    "priceCents": 3000,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908022632082",
+    "name": "3 SISTERS CRANBERRY NON-ALCOHOLIC BEER 330ML",
+    "description": "",
+    "image": "Images/3sister-cranberry.jpeg",
+    "priceCents": 3000,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908022632129",
+    "name": "3 SISTERS PEACH NON-ALCOHOLIC BEER 330ML",
+    "description": "",
+    "image": "Images/3sister-peach.webp",
+    "priceCents": 3000,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556001288196",
+    "name": "MAGGI SYIOK! BOWL RAMEN 90G",
+    "description": "Hot Mealz Kari Kaw",
+    "image": "Images/maggi-bowl.webp",
+    "priceCents": 3500,
+    "category": "snacks & noodles",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "051325111063",
+    "name": "MAMEE INSTANT NOODLES 80G",
+    "description": "Curry Flavour Assaisonnee De Curry",
+    "image": "Images/mamee.jpeg",
+    "priceCents": 700,
+    "category": "snacks & noodles",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "645175571636",
+    "name": "OTTOGI JIN RAMEN SPICY BOWL 110G",
+    "description": "Korean Style Instant Noodle!",
+    "image": "Images/jin-ramen.jpeg",
+    "priceCents": 3500,
+    "category": "snacks & noodles",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4792018233131",
+    "name": "KOTTUME INSTANT NOODLES 80G",
+    "description": "Hot & Spicy Flavour",
+    "image": "Images/kottume.jpeg",
+    "priceCents": 700,
+    "category": "snacks & noodles",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8858829601173",
+    "name": "IMEE INSTANT NOODLES CUP 65G",
+    "description": "Creamy Tom Yum Shrimp Flavour",
+    "image": "Images/imee-cup-noodles.jpeg",
+    "priceCents": 1700,
+    "category": "snacks & noodles",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9555022303284",
+    "name": "MAMEE CHEF CUP NOODLES 70G",
+    "description": "Perisa Tom Yam Thai Flavour",
+    "image": "Images/chef-cup.jpeg",
+    "priceCents": 2500,
+    "category": "snacks & noodles",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "074305001161",
+    "name": "KOREAN BRAGG APPLE CIDER VINEGAR",
+    "description": "Organic Raw-Unfiltered",
+    "image": "Images/korean-drink.jpeg",
+    "priceCents": 25000,
+    "category": "korean drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6921804700757",
+    "name": "KOREAN CHILLI SAUCE 280G",
+    "description": "Chilli Sauce with Fermented Soybean",
+    "image": "Images/korean-chilli-sauce.jpeg",
+    "priceCents": 700,
+    "category": "korean sauce",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062331135",
+    "name": "MR POTATO CRIPS SOUR CREAM ONION 160G",
+    "description": "",
+    "image": "Images/mr.chips-sour.jpeg",
+    "priceCents": 3500,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "2701",
+    "name": "Theluli fai",
+    "description": "",
+    "image": "Images/thel.jpg",
+    "priceCents": 5500,
+    "category": "food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "90020087",
+    "name": "Rauch Grape Red Juice 250ml",
+    "description": "",
+    "image": "Images/rauch-drink.jpeg",
+    "priceCents": 2000,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "7894904573516",
+    "name": "Seara Chicken Nuggets 300g",
+    "description": "",
+    "image": "Images/seara-chicken-nuggets.jpeg",
+    "priceCents": 5000,
+    "category": "chicken nuggets",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "50396238",
+    "name": "Digestive original 250g",
+    "description": "Delicious Wheat Biscuits",
+    "image": "Images/digestive-original.jpeg",
+    "priceCents": 3500,
+    "category": "snacks biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5000396014877",
+    "name": "Digestive Dark chocolate 250g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/10202/5000396014877.jpg",
+    "priceCents": 3500,
+    "category": "biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5000396008784",
+    "name": "Digestive light 250g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/10201/5000396008784.jpg",
+    "priceCents": 3500,
+    "category": "biscuits snackss",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5602835851229",
+    "name": "Tom milk yogurt strawberry 100g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/51327/10J4vc2lSgYThdVmlJrqvPNmvN0PIeGdt2JBwwzf.jpg",
+    "priceCents": 1500,
+    "category": "yogurt drinkss",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5602835851236",
+    "name": "Tom milk yogurt banana 100g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/51325/SXnFseSASFpD4hxr86PRcQNwO3bNuSkGTJVMNGT5.jpg",
+    "priceCents": 1500,
+    "category": "yogurt drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023226275",
+    "name": "Zess Butter Cookies",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/41816/pxbNPveiVryfE9q8KWZHBx8RZcJkMatl9TDdlpLP.jpg",
+    "priceCents": 3500,
+    "category": "biscuits snacks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "2691",
+    "name": "HM Kattala pkts",
+    "description": "",
+    "image": "Images/kattala-pkts.jpeg",
+    "priceCents": 8500,
+    "category": "food house",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6291023137901",
+    "name": "Amar corn flour 400g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/23373/0ot788vXjLsV0mbMR2Cge46HeTFZq1zU1tMoq14v.jpeg",
+    "priceCents": 3200,
+    "category": "food flour",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "2682",
+    "name": "CIF Original 500ml",
+    "description": "",
+    "image": "Images/cif-original.jpeg",
+    "priceCents": 4600,
+    "category": "cleaner",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908009616678",
+    "name": "Super Klin 3 in 1 liquid detegent pink 1L",
+    "description": "",
+    "image": "Images/super-klin-ping.webp",
+    "priceCents": 6760,
+    "category": "soap detergent",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908009616432",
+    "name": "Super Klin liquid detergent blue 1L",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/52208/0OhLt2gF3mRyvfl8NM3wZCc5vUke8LJEHORlk4vx.jpg",
+    "priceCents": 6760,
+    "category": "soap detergent",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8410128770068",
+    "name": "Pascual Strawberry Fresa Morango drink 188ml",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/18379/pnuhHWZSK23FOwFqnScdhFjPm9LzxxnNAwihwmzo.jpeg",
+    "priceCents": 1800,
+    "category": "yogurt drink",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6292848616060",
+    "name": "VGG Pasta Sauce 370g",
+    "description": "",
+    "image": "Images/vgg-pasta.jpeg",
+    "priceCents": 3500,
+    "category": "sauce",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023331160",
+    "name": "Rota Potato Chips Hot & Spice 70g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/7579/9556023331160.jpg",
+    "priceCents": 2200,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023331146",
+    "name": "Rota potato chips tomato 70g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/49589/Qh5omFpY0qzD0QviadgYJ6RG2GaVnWwbI4YG4JAM.jpg",
+    "priceCents": 2200,
+    "category": "",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023331153",
+    "name": "Rota potato chips Natural 70g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/33652/7cInCAFb5oTJ5VAanTIhArU4xjN9Mv1kFUuswl1H.jpg",
+    "priceCents": 2200,
+    "category": "chips ",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023210212",
+    "name": "Jacker Potato Chips Natural 60g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/7082/9556023210212.jpg",
+    "priceCents": 2300,
+    "category": "chips ",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023210236",
+    "name": "Jacker Hot & Spicy 60g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/8761/9556023210236.jpg",
+    "priceCents": 2300,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556023210243",
+    "name": "Jacker Potato Chips Tomato 60g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/8760/9556023210243.jpg",
+    "priceCents": 2300,
+    "category": "chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501033125476",
+    "name": "Suroor milk powder pkt 1800g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/30440/LrC3nHKzu7YpLvtiEOIuosrgQI0JU6WP512PVQ5X.jpg",
+    "priceCents": 25000,
+    "category": "milk powder",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8410128416188",
+    "name": "Pascual yogikid strawberry fresa 80g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/1154/mg3xGOJSBVomjDJGDtHrfeRhHfFzqn6BEPb7KfH5.jpeg",
+    "priceCents": 1500,
+    "category": "yogurt drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4792037313241",
+    "name": "dettol original soap 70g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/18312/4792037313241.jpg",
+    "priceCents": 1200,
+    "category": "soap",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5203912390282",
+    "name": "Pilsbury Mix cocoa 495 g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/4365/5203912390282.jpg",
+    "priceCents": 5500,
+    "category": "cake powder",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8437011503138",
+    "name": "Deli sun 8 soft flour tortilias 19cm 320gm",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/30043/8437011503138.jpg",
+    "priceCents": 38.5,
+    "category": "roti paratha",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8437011503107",
+    "name": "Deli Sun 6 tomato wheat wraps 24cm 360g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/30044/8437011503107.jpg",
+    "priceCents": 4940,
+    "category": "roti paratha",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8437011503084",
+    "name": "Deli sun 6 corn wheat wraps 24cm 360gm",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/35923/ANPyP0iOaFivwqAnL8gD2ALTJpoa6OP7VzjQNRVl.jpg",
+    "priceCents": 4940,
+    "category": "roti paratha",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8437011503190",
+    "name": "Deli Sun 4 thin & crispy pizza base 24cm 320g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/30047/8437011503190.jpg",
+    "priceCents": 4090,
+    "category": "roti paratha",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8437011503336",
+    "name": "Deli Sun 10 Plain Flour wrap 14 cm",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/41999/7U7EALpeWF6Oplp8w0bH3uiI2ZycniOGehKSdbn6.jpg",
+    "priceCents": 35.3,
+    "category": "roti paratha",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8691720020328",
+    "name": "Brawo Desire Cake caramel 40g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/30359/rTp43BZp63jO6oztUxZLYADKEaL0EIowCeA0Ov4e.jpg",
+    "priceCents": 900,
+    "category": "chocolate cake",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8691720020373",
+    "name": "Cassy Compound White chocolate 35g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/15074/cpA7CCt50oNSORz2NcewZHZasqnLlwJW7Ze8DLCm.jpeg",
+    "priceCents": 800,
+    "category": "chocolate cake",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8691720020335",
+    "name": "Brawo Desire Cake Hazelnut 40g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/30456/zznOt28OVZ5JxLlncKsgsBDZDB8pRp4JIQdPhJ2T.jpg",
+    "priceCents": 9,
+    "category": "chocolate cake",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8691720020267",
+    "name": "Brawo Donut Rasberry Cake 40g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/23267/8x9Wjf4AennZiYfDHf62mxE2Io1MXQfiuHyczqFA.jpeg",
+    "priceCents": 800,
+    "category": "chocolate donut",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8691720020243",
+    "name": "Brawo Donut Cake",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/31751/Uvdlf9XSniTY0q08w5SdgK8rbZZtP900Un19qCpF.jpg",
+    "priceCents": 800,
+    "category": "chocolate donut",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901030686030",
+    "name": "Lifebouy bodywash total 10 300ml",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/1383/Z7Pe76LQ3inlFNzO5P2AdjisUCoxBwp06MydVLBU.jpeg",
+    "priceCents": 3500,
+    "category": "bodywash soaps",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8999999030384",
+    "name": "Lifebuoy Bodywash Lemon Fresh 500ML",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/222/mbuVFUCTOPKDvGFSrbfzprlpDW97Y7zvj3j6dtlA.jpeg",
+    "priceCents": 7200,
+    "category": "bodywash soap",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901180781043",
+    "name": "Faber Castell Ruler 30cm",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/51013/03uFXdcV8jOuAYFb2mrQ6hI6M7T174AsxVkthGcd.png",
+    "priceCents": 800,
+    "category": "stationary",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6299100030589",
+    "name": "Nature Fresh Icing Sugar 500g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/31280/dZ9CfjS3X9nYjiP2UWzgIFCYHRhl8Vw13W15Iz3C.jpg",
+    "priceCents": 3000,
+    "category": "sugar sweetner",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8906064233632",
+    "name": "Suhana Masala Powder 70g (Chicken Briyani)",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/47284/VxJymAmVIwbhGPEFmK5HQUJIPJTkRFEEkBKCzDXm.jpg",
+    "priceCents": 1800,
+    "category": "spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901662040088",
+    "name": "Suhana Masala Powder 70g (Chicken)",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/47287/7F83PZv0U7UKlXzDleGCdrkkDX81yXLssd9X9Q1m.jpg",
+    "priceCents": 1800,
+    "category": "spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062331869",
+    "name": "MR POTATO CRIPS SWEET POTATO NATURAL 160G",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/20190/Cg1fkbmYmrgTHWWNu0LDnlA2gwo2yLuGjSwK4yWN.jpeg",
+    "priceCents": 3500,
+    "category": "chips & snacks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6291003150173",
+    "name": "HAYAT SPAGHETTI 500 g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/23436/MJ97boDlKBlpdTeYgC6zEfEIl46CYLU2P4xyygZh.jpeg",
+    "priceCents": 2500,
+    "category": "pasta & snacks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4005808816033",
+    "name": "NIVEA Deodorant Spray Dry Comfort Female 150ml",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/4851/4005808816033.jpg",
+    "priceCents": 6000,
+    "category": "perfume & personal care",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4005900540188",
+    "name": "NIVEA Deodorant Spray B&W Silky Smooth 150ml",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/32626/4005900540188.jpg",
+    "priceCents": 6000,
+    "category": "perfume & personal care",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "0088000008622",
+    "name": "Felivaru economy pack 180 with lead",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/41909/rShRdNu5xrzGjchAbXH8eMS3qdy2N03URlTRcjMd.jpg",
+    "priceCents": 1950,
+    "category": "fish tuna",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8941152000789",
+    "name": "Danish chanchur 60g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/20825/kBFRLHkEuPCWT14hMCajEsT7wIXw5GWZ6N4tS0ot.jpeg",
+    "priceCents": 1000,
+    "category": "snacks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8941152000765",
+    "name": "Danish chanachur 140g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/11807/4Ox9Ri4tg27fQr4gcOXByCQSjkZwCnG5ztAdEOgU.png",
+    "priceCents": 1500,
+    "category": "snacks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8941152000123",
+    "name": "Rani Coriander Powder 100g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/19253/1BrXq5BDoHK2XH58fa9ze7TQZ4Zt3tqhCezPziDA.jpeg",
+    "priceCents": 1450,
+    "category": "spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8941152000932",
+    "name": "Rani chilli powder 100g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/14987/cKst54uYbpfPPBLcD0Ghf9Zv4Lu6rmb8HGc1PmqN.jpeg",
+    "priceCents": 1450,
+    "category": "spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8941152000918",
+    "name": "Rani chilli powder 500g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/628/YfTJVzfvo1PKNofLPmKfQFkbaKSbeCBZ9EwSi52N.jpeg",
+    "priceCents": 4800,
+    "category": "spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901499011381",
+    "name": "kelloggs Oats 900g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/37285/mm44Lyn0px4JSKhS8lrZlz0vFYl0KtcgtecIwMol.png",
+    "priceCents": 12000,
+    "category": "diets",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901499008312",
+    "name": "Kelloggs Corn Flakes Real Honey 300g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/536/U1YvQRUwZsebA3Ak9aYydBeWVkvaU7WXCkqzqFqT.jpeg",
+    "priceCents": 7970,
+    "category": "diets",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901499008183",
+    "name": "Kelloggs Corn Flakes Normal 250g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/129/TgpwKbGWanmHXb1lmPiy4S0EN2PfslwnFrl2oT8C.jpeg",
+    "priceCents": 56.3,
+    "category": "diets",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8690576029004",
+    "name": "Ankara Spagetti 500g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/4662/8690576029004.jpg",
+    "priceCents": 2440,
+    "category": "pasta & snacks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9555513207411",
+    "name": "Choice condense Milk",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/11237/iDiCXRC6zvIDkWcGDYA0eL3eucml6pQ2k8Vtpd4W.jpeg",
+    "priceCents": 1500,
+    "category": "milk sweetner cake",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6291059069504",
+    "name": "Sarola Sunflower oil 1.5L",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/44832/b3660N7IXCvmeSNwlDvHTpm07ZgWlJ85T4yBi8EQ.jpg",
+    "priceCents": 6300,
+    "category": "cooking",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901440207535",
+    "name": "Eastern super garam masala",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/43406/Qb5i0TiCq9SSSemTeU7NVhKmsett0z3ensWg1Wyh.jpg",
+    "priceCents": 3000,
+    "category": "spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901440013570",
+    "name": "Eastern Vegetable masala 100g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/31196/8901440013570.jpg",
+    "priceCents": 2000,
+    "category": "spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "7972257972252",
+    "name": "Fish pkts chips",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/15032/8iOXQ3LBeMPfegSZ2nQFWBR0GkznyOum7dACQAPA.jpeg",
+    "priceCents": 1450,
+    "category": "fish masmirus",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "0096077288724",
+    "name": "masfiyaa pkts 25g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/44367/HTvZtNtNR5LjMweA3JymlOhwyVF3nk8XM2chCIS2.jpg",
+    "priceCents": 1450,
+    "category": "fish masmirus",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062321136",
+    "name": "Mr Potato Crisps Sour Cream Onion 40g",
+    "description": "Crispy potato chips with sour cream and onion flavor",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/8506/9557062321136.jpg",
+    "priceCents": 1667,
+    "category": "food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062321495",
+    "name": "Mr Potato Crisps Sweet Potato Natural 40g",
+    "description": "Natural sweet potato crisps",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/92/GBGzddegYhcF1vUuThVWl932udlNVmWKTbFzE3yA.jpeg",
+    "priceCents": 1800,
+    "category": "food chips snacks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "2019081938001",
+    "name": "BIS CREM CRACK. PREMIER LILY",
+    "description": "Cream-filled crackers with a rich lily flavor",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/1514/c0MB4N9zT6l7UlhhTBNfONAU00tRuXfzB5aLcXBM.jpeg",
+    "priceCents": 1650,
+    "category": "food & biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9555589200668",
+    "name": "Sprite 320ml",
+    "description": "Lemon-lime flavored carbonated drink",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/8132/9555589200668.jpg",
+    "priceCents": 1389,
+    "category": "food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8690516003521",
+    "name": "Piyala Pasta Penne Rigate 500g",
+    "description": "Penne rigate pasta for cooking",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/729/uX3b1HxJKS65PqsNdt93C5IO3YD3Ni7w4lRlbbKE.jpeg",
+    "priceCents": 2500,
+    "category": "food & pasta",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4791034042611",
+    "name": "Maliban Cream Cracker 125g",
+    "description": "Classic cream crackers",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/12967/4791034042611.png",
+    "priceCents": 1200,
+    "category": "food biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4791034070652",
+    "name": "Maliban Cream Cracker 190g",
+    "description": "Classic cream crackers in a larger pack",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/12967/4791034042611.png",
+    "priceCents": 1600,
+    "category": "food & biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556001023605",
+    "name": "Carnation Evaporated Creamer 390g",
+    "description": "Evaporated creamer for cooking and beverages",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/21750/9556001023605.jpg",
+    "priceCents": 3500,
+    "category": "food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6939563202245",
+    "name": "Mama Lime 2Ltr",
+    "description": "Lime-scented dishwashing liquid",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/20852/fVWC8QOewSefwYEEWXNYRBGkUtCPEAqVpEc5MQFN.jpeg",
+    "priceCents": 6500,
+    "category": "cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8887380020062",
+    "name": "Battleship Food Color Rose Pink",
+    "description": "Rose pink food coloring for baking",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/14847/gjTLt9aymC6ran4QrYKFeccZRhzCjOHMykUcXACF.jpeg",
+    "priceCents": 4000,
+    "category": "food & color",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8887380020017",
+    "name": "Battleship Food Color Green",
+    "description": "Green food coloring for baking",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/14846/wqTNZm3sNlcVLxZFfiql7hWXLQEkemNiYDDmMlF3.jpeg",
+    "priceCents": 4000,
+    "category": "food & color",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8004800023001",
+    "name": "Lago Poker Wafer Cocoa 45g",
+    "description": "Single pack cocoa wafer snack",
+    "image": "Images/lago-cocoa.jpeg",
+    "priceCents": 900,
+    "category": "food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8004800023018",
+    "name": "Lago Poker Wafer Hazelnut 45g",
+    "description": "wafer snack with hazelnut cream",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/17032/8004800023018.jpg",
+    "priceCents": 900,
+    "category": "food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8004800023025",
+    "name": "Lago Poker Wafer Vanilla 45g",
+    "description": "wafer snack with vanilla cream",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/17031/8004800023025.jpg",
+    "priceCents": 900,
+    "category": "food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8719189419405",
+    "name": "Cravings Croissant Chocolate 40g",
+    "description": "filled with chocolate cream",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/42214/vHEW6jwJaOPlhwA8l7UahhdFwEB1pBxJHRiFfZXC.png",
+    "priceCents": 700,
+    "category": "food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "01010",
+    "name": "Heera Panna 50g",
+    "description": "Refreshing Indian mouth freshener",
+    "image": "Images/heera-panna-50g.jpeg",
+    "priceCents": 2500,
+    "category": "food",
+    "unit": [
+      "tin"
+    ]
+  },
+  {
+    "productId": "020202",
+    "name": "Heera Panna 100g",
+    "description": "Refreshing Indian mouth freshener",
+    "image": "Images/heera-panna-100g.jpeg",
+    "priceCents": 3500,
+    "category": "food",
+    "unit": [
+      "tin"
+    ]
+  },
+  {
+    "productId": "8901030976353",
+    "name": "21 Vim Dishwashing Soap 125g",
+    "description": "Lemon-scented soap bar",
+    "image": "Images/vim-bar.jpeg",
+    "priceCents": 600,
+    "category": "cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8682511110557",
+    "name": "Predox Fabric Softener Ocean Breeze 1L",
+    "description": "",
+    "image": "Images/softner-ocean.jpeg",
+    "priceCents": 3500,
+    "category": "cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8992775315095",
+    "name": "Gery Saluut Malakist Sweet Cheese 100g",
+    "description": "Sweet cheese cream filled crackers",
+    "image": "Images/gery-cheese.jpeg",
+    "priceCents": 1500,
+    "category": "food & biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6291003191275",
+    "name": "Alfa Mayonnaise 16oz",
+    "description": "Classic creamy mayonnaise",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/36/6yvZ89W1ghWH3fT5x9XNrYwDoO80ZX2lv0nh9zmL.jpeg",
+    "priceCents": 3500,
+    "category": "food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556046200108",
+    "name": "Daisy Margarine 480g",
+    "description": "Smooth and creamy margarine by Daisy",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/3487/g2orqQ21kDXEJiLQroIXpNZ9Bvf7Uh22VDgDCtxI.jpeg",
+    "priceCents": 5000,
+    "category": "food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "1182",
+    "name": "Fresh Lemon (Lunbo)",
+    "description": "Fresh lemons sold by weight",
+    "image": "Images/fresh-lemon.jpeg",
+    "priceCents": 45,
+    "category": "Food & vegetables",
+    "unit": [
+      "gram",
+      "kg"
+    ]
+  },
+  {
+    "productId": "1181",
+    "name": "Onion Fresh (Fiyaa)",
+    "description": "Fresh onions sold by weight",
+    "image": "Images/fresh-onion.jpeg",
+    "priceCents": 27,
+    "category": "Food & vegetables",
+    "unit": [
+      "gram",
+      "kg"
+    ]
+  },
+  {
+    "productId": "5014176000684",
+    "name": "Akbar Tea Bags Normal 100 x 2g (L)",
+    "description": "pack of 100, large size",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/156/un3CJQhmcFwTiBv3kmeD3vG86vpzhtFgrWmiNPMK.jpeg",
+    "priceCents": 4400,
+    "category": "Food & drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5014176000660",
+    "name": "Akbar Tea Bags Normal 25 x 2g (S)",
+    "description": " pack of 25, small size",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/154/0UfRzQuNqWm6L4ngyb3qARrAD7rtAvR55Sfy0gQ8.jpeg",
+    "priceCents": 1200,
+    "category": "Food & drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8886311101108",
+    "name": "Yeye 3 in 1 Coffee Mix (50s x 20g)",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/139/epbGOYlbWiLw1FGpUfUQuPeZpCrwSNqr0hSZrt0A.jpeg",
+    "priceCents": 250,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6919046601581",
+    "name": "Navigable Cream Crackers 200g",
+    "description": "Crunchy cream crackers 200g pack",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/392/lfAkAMHCEM5aCcLDnXGVJ06ae4fgZAD1SSokjQgn.jpeg",
+    "priceCents": 1800,
+    "category": "Food & biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "726165091065",
+    "name": "Apollo Pandan Layer Cake 18g",
+    "description": "Soft pandan flavored layer cake",
+    "image": "Images/apollo-pandan.jpg",
+    "priceCents": 200,
+    "category": "Food & cake",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "726165071036",
+    "name": "Apollo Strawberry Layer Cake 18g",
+    "description": "Soft strawberry flavored layer cake",
+    "image": "Images/apollo-strawberry.jpeg",
+    "priceCents": 200,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8998866601788",
+    "name": "Wing Porcelain Cleaner 780ml",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/9/fRRN1QJgcJlqcmgg6EVhr8MOgumiT67IT5tS0Wao.jpeg",
+    "priceCents": 3500,
+    "category": "Cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8886201082200",
+    "name": "Felivaru Chunks in Oil 140g",
+    "description": "",
+    "image": "Images/tuna-140g.jpeg",
+    "priceCents": 1600,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "89861020115",
+    "name": "Felivaru Tuna Chunks in Oil with Garlic 180g",
+    "description": "",
+    "image": "Images/tuna-garlic.jpeg",
+    "priceCents": 2000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "",
+    "name": "Fresh Egg",
+    "description": "",
+    "image": "Images/fresh-egg.jpeg",
+    "priceCents": 250,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901440013136",
+    "name": "Eastern Fish Masala 100g",
+    "description": "Eastern brand fish masala spice, 100g pack",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/1308/2TkAcbayA8jIaGQXpRbFiZ2ZI40oDzq0Y8qz6tpl.jpeg",
+    "priceCents": 2000,
+    "category": "Food & spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901440013020",
+    "name": "Eastern Biriyaani Masala 100g",
+    "description": "Eastern brand biriyaani masala spice, 100g pack",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/256/njPfGZVqKBNszpNCfopIYVZTol8ZxU4P1CNmziQw.jpeg",
+    "priceCents": 2000,
+    "category": "Food & spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901440023098",
+    "name": "Eastern Coriander Powder 100g",
+    "description": "Eastern brand coriander powder, 100g pack",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/5200/8901440023098.jpg",
+    "priceCents": 1000,
+    "category": "Food & spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901440023258",
+    "name": "Eastern Cumin Powder 100g",
+    "description": "Eastern brand cumin powder, 100g pack",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/2766/d6hbwKQCNJXGpUrOEV68s1nPXBqqoec6PBlpreO6.jpeg",
+    "priceCents": 2000,
+    "category": "Food & spicy",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501033113015",
+    "name": "Almudish Tomato Paste 70g",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/476/YQYfKe7q6Nc2XsOgWhS5gf4CLkPVW63gTQoQkuLr.jpeg",
+    "priceCents": 500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8888192502678",
+    "name": "Highway Peanut Butter Creamy Red",
+    "description": "Smooth and creamy peanut butter",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/2770/SeRt74PsMb1gL3z5AxFQUTyKNlha6u2D579Zhn1Z.jpeg",
+    "priceCents": 5000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8886311103126",
+    "name": "Diet Yeye 3 in 1 Less Sugar",
+    "description": "Low-sugar 3-in-1 instant coffee mix for a quick beverage.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/140/qS87n6ga374HDlcVMiVJ1AjdyV8ySkF9aMi9PrTp.jpeg",
+    "priceCents": 300,
+    "category": "Food",
+    "unit": [
+      "pac"
+    ]
+  },
+  {
+    "productId": "6927022201472",
+    "name": "INK ORIGINAL 30 PADS BLUE",
+    "description": "Blue cosmetic pads for gentle makeup removal, 30 pads.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/164/BK7G2M03r1XOF02VoHCTsdfNJgc2dOhgdC8VJ7ws.jpeg",
+    "priceCents": 3500,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062331159",
+    "name": "Mr Potato Crisps Hot & Spicy 145G",
+    "description": "Crispy potato hot & spicy flavor",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/90/C1P69k8USDnWp0L1c848LfoTSv3ioFjsbA8NrVK3.jpeg",
+    "priceCents": 3500,
+    "category": "Food & chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062331128",
+    "name": "Mr Potato Crisps Original 145G",
+    "description": "Classic original flavor potato crisps,",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/89/plnd6RSuS8Osd2WfNV3lPVL5RPxIMg1GY79v46tJ.jpeg",
+    "priceCents": 3500,
+    "category": "Food & chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062331142",
+    "name": "Mr Potato Crisps BBQ 145G",
+    "description": "Smoky BBQ-flavored potato crisps.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/473/JnH3wJsLj5Bferw8fJm8UvQfPLazYmVoO45GbetQ.jpeg",
+    "priceCents": 3500,
+    "category": "Food & chips",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557008224064",
+    "name": "Lisa's Farm Strawberry Jam 240G",
+    "description": "perfect for spreads",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/97/XTxTZil0ZtuLDpIukr6ytGPb5qIigByQ4HM5t4SM.jpeg",
+    "priceCents": 2500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8888101271206",
+    "name": "Chocolate Puff Biscuit 100G",
+    "description": "Rich chocolate-flavored puff biscuits, 100g pack.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/346/CA8dwknX98Tk1PukDlf9By0RF3ED1JKwZSyyjWS3.jpeg",
+    "priceCents": 983,
+    "category": "Food & biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6939563202580",
+    "name": "Mama Dish Wash Liquid-Lime 5L",
+    "description": "Lime-scented dishwashing liquid for grease removal, 5L bottle.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/20853/cSVxhq90WAGHm7WzaQLRy3nFV0ALGzWW8jxcswG8.jpeg",
+    "priceCents": 13500,
+    "category": "Cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8886311105588",
+    "name": "Yeye 3 in 1 Cereal",
+    "description": "Nutritious 3-in-1 instant cereal drink mix, convenient and tasty.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/1869/pwJYC6ZXMrfdYwH3zBksorSQtsdwJXcdqm2tSw0d.jpeg",
+    "priceCents": 500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901882000763",
+    "name": "Dry Chili Finesse",
+    "description": "Finely ground dried chili for adding spice to dishes.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/32663/pzL8mEpKvL6uIiMuQGz4R1sJDIsY6d14Jgw0jXUH.jpg",
+    "priceCents": 3500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "garlic-0",
+    "name": "Fresh Garlic",
+    "description": "Fresh garlic bulbs, essential for flavorful cooking.",
+    "image": "Images/fresh-garlic.jpeg",
+    "priceCents": 6,
+    "category": "Food & vegetables",
+    "unit": [
+      "grams",
+      "kg"
+    ]
+  },
+  {
+    "productId": "chili-0101",
+    "name": "HOT CHILLI FRESH",
+    "description": "Spicy fresh hot chilies, perfect for adding heat to dishes.",
+    "image": "Images/hot-chilli.jpeg",
+    "priceCents": 25,
+    "category": "Food",
+    "unit": [
+      "grams",
+      "kg"
+    ]
+  },
+  {
+    "productId": "yd--01",
+    "name": "Yellow dhall",
+    "description": "Yellow dhal lentils, perfect for curries and soups.",
+    "image": "Images/yellow-dal.jpeg",
+    "priceCents": 4,
+    "category": "vegetables",
+    "unit": [
+      "grams",
+      "kg"
+    ]
+  },
+  {
+    "productId": "ed--01",
+    "name": "Red dhall",
+    "description": "reds dhal lentils, perfect for curries and soups.",
+    "image": "Images/red-da.jpeg",
+    "priceCents": 3.5,
+    "category": "vegetables",
+    "unit": [
+      "grams",
+      "kg"
+    ]
+  },
+  {
+    "productId": "8888192821342",
+    "name": "Hosen Mixed Vegetable 400G",
+    "description": "Mixed vegetables in a can, 400g for quick meals.",
+    "image": "Images/hosen-mix-veg.jpeg",
+    "priceCents": 2000,
+    "category": "vegetables",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6926313587110",
+    "name": "Hacker Worrior Insact Aerosol Lemon 300ML",
+    "description": "Lemon-scented insect repellent aerosol, 300ml can.",
+    "image": "Images/hacker3.png",
+    "priceCents": 4500,
+    "category": "Cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6926313587141",
+    "name": "Hacker Worrior Insact Aerosol Orange 300ML",
+    "description": "Orange-scented insect repellent aerosol, 300ml can.",
+    "image": "Images/hacker4.avif",
+    "priceCents": 4500,
+    "category": "Cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6926313588209",
+    "name": "Hacker Worrior Insact Aerosol Lemon 750ML",
+    "description": "Large lemon-scented insect repellent aerosol",
+    "image": "Images/hacker2.webp",
+    "priceCents": 7000,
+    "category": "Cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6926313588261",
+    "name": "Hacker Worrior Insact Aerosol Fresh 750ML",
+    "description": "Fresh-scented insect repellent aerosol",
+    "image": "Images/hacker1.jpeg",
+    "priceCents": 7000,
+    "category": "Cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8961100093731",
+    "name": "Falak-Super Basmati Rice 5KG",
+    "description": "Premium basmati rice, 5kg for bulk cooking.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/2109/VHYew0Sj1AM5DdveF2QWcNIqr9yxOgWUssvoysgH.jpeg",
+    "priceCents": 220,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8903622001757",
+    "name": "Mamy Poko Pants L 56",
+    "description": "Large baby pants, 56 pieces for all-day comfort.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/36258/K2tkxgw6JcDejtP9yFKH9rUdooZRyOPtdfGwHkck.png",
+    "priceCents": 29500,
+    "category": "Baby",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8991001400017",
+    "name": "Cocoa Powder Van Houten 45G",
+    "description": "Rich cocoa powder for baking and beverages, 45g.",
+    "image": "Images/coco-pow.jpeg",
+    "priceCents": 4000,
+    "category": "cake",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101331020",
+    "name": "Fanta Orange 125ML BTL",
+    "description": "Refreshing orange-flavored Fanta, 125ml bottle.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/203/gOLeRWUXlMpINxqNtnt4LKSxUqq8kQT09HZKmif0.jpeg",
+    "priceCents": 3500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101330542",
+    "name": "Fanta Orange 500ML BTL",
+    "description": "Zesty orange Fanta, 500ml bottle for refreshment.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/261/d6YlYU06XvBTXEJCxFZzdHQVN0vOlqpmb8IbMb9O.jpeg",
+    "priceCents": 1500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101331044",
+    "name": "Sprite 125ML BTL",
+    "description": "Crisp lemon-lime Sprite, 125ml bottle.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/206/q1Uqk1eF3PJvyZioMS3UIMoheSvuc8uebFAdKZzJ.jpeg",
+    "priceCents": 3500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101330528",
+    "name": "Sprite 500ML BTL",
+    "description": "Refreshing lemon-lime Sprite, 500ml bottle.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/262/rVuNLbjFdBW9S0MKKRQsAxmKy7IvLXsISbFu7Hij.jpeg",
+    "priceCents": 1500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101330504",
+    "name": "Coca Cola Bottle 500ML",
+    "description": "Classic Coca-Cola, 500ml bottle for refreshment.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/207/zHSSe7RTUgtEGxhcBU21GzVN3GpOeb0IWuPNeEoI.jpeg",
+    "priceCents": 1500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101331013",
+    "name": "Coca Cola Bottle 1.25L",
+    "description": "Classic Coca-Cola, 1.25L bottle for sharing.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/204/vRmgk7pLqhp127nNKlnGkGiAlhMDsqKBchU2jc0d.jpeg",
+    "priceCents": 3500,
+    "category": "drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8888101050801",
+    "name": "Munchee Marie Original Biscuit 400G",
+    "description": "Classic Marie biscuits, 400g for tea-time snacking.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/5/P2M9z0wPoS91n81wrRUB8tIOGjMnwoS9xalWm6qQ.jpeg",
+    "priceCents": 3000,
+    "category": "Food & biscuits",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4791066000139",
+    "name": "Elephant House Ice Cream Chocolate 1ltr Tub",
+    "description": "Rich chocolate ice cream",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/1774/5AFtGagzFavNIZX0MYRkLLrzPNNigpd1RZU0Shb7.jpeg",
+    "priceCents": 8000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4791066001419",
+    "name": "Elephant House Ice Cream Wonderbar Chocolate 70ml bar",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/43177/GswBi9L1dSi3AvECk2DbVqwYRWtCGoMyZTlgNR93.jpg",
+    "priceCents": 2000,
+    "category": "ice-creams",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4791066000047",
+    "name": "Elephant House Ice Cream Vanilla 500ml",
+    "description": "Creamy vanilla ice cream",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/7136/4791066000047.jpg",
+    "priceCents": 6000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4791066000146",
+    "name": "Elephant House Ice Cream Chocolate 500ml",
+    "description": "Rich chocolate ice cream",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/16205/W1Jrbv2dWxAY4WLzO0ixiDiPzHl0B3JPju50cej4.png",
+    "priceCents": 6000,
+    "category": "ice-creams",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "clove-oo",
+    "name": "CLOVES (KARANFU)",
+    "description": "Whole cloves for spicing up dishes and beverages.",
+    "image": "Images/clvoe.jpeg",
+    "priceCents": 45,
+    "category": "Food",
+    "unit": [
+      "grams",
+      "kg"
+    ]
+  },
+  {
+    "productId": "carda-111",
+    "name": "CARDAMON (KAAFURU THOLHI)",
+    "description": "Fragrant cardamom pods ",
+    "image": "Images/cardamon.jpeg",
+    "priceCents": 90,
+    "category": "Food",
+    "unit": [
+      "grams",
+      "kg"
+    ]
+  },
+  {
+    "productId": "8992222053105",
+    "name": "Gatsby Wax Loose & Flow 75G",
+    "description": "Hair wax ",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/4089/8992222053105.jpg",
+    "priceCents": 3200,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8992222053129",
+    "name": "Gatsby Wax Ultim & Shaggy 75G",
+    "description": "Hair wax ",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/2926/09stPJJbyoUIkvaE496QVb1banH5pk8B9AOX1iMC.jpeg",
+    "priceCents": 3200,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557040100272",
+    "name": "Greenhill Fruit Cordial Blueberry 1L",
+    "description": "Blueberry fruit cordial",
+    "image": "Images/greenhil-blueberry.jpeg",
+    "priceCents": 5250,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557040100166",
+    "name": "Greenhill Fruit Cordial Mandarin Orange 1L",
+    "description": "Mandarin orange cordial.",
+    "image": "Images/greenhill-orange.jpeg",
+    "priceCents": 5250,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557040100043",
+    "name": "Greenhill Fruit Cordial Grape 1L",
+    "description": "Grape fruit cordial",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/13655/9557040100043.jpg",
+    "priceCents": 5250,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6224010239227",
+    "name": "Solymarfood Guava Nectar Bottle 250ML",
+    "description": "Guava nectar, 250ml for a tropical drink.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/38987/8DLeeTT3wND2cOkTYagFLlVnDR6srP32iDbywwmv.jpg",
+    "priceCents": 1000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "",
+    "name": "Wooden Fork 6",
+    "description": "Set of 6 wooden forks, eco-friendly for dining.",
+    "image": "Images/fork.jpeg",
+    "priceCents": 50,
+    "category": "Kitchen",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "sp001",
+    "name": "Wooden Spoon 6",
+    "description": "Set of 6 wooden spoons, perfect for cooking or serving.",
+    "image": "Images/spoon.jpeg",
+    "priceCents": 50,
+    "category": "Kitchen",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062321129",
+    "name": "Mr Potato Crisps Original 40G",
+    "description": "Classic original flavor potato crisps.",
+    "image": "Images/mr.chipsoriginal.jpeg",
+    "priceCents": 1800,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062321150",
+    "name": "Mr Potato Crisps Hot & Spicy 40G",
+    "description": " hot & spicy potato crisps",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/244/cjZkqgZ14vLg19AvoVRP0BRzfGu09hBSVWaHXr6z.jpeg",
+    "priceCents": 1800,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9557062321143",
+    "name": "Mr Potato Crisps BBQ 40G",
+    "description": "Smoky BBQ flavored potato crisps, 40g pack.",
+    "image": "Images/mr.chips-bbq.jpeg",
+    "priceCents": 1800,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8999178840230",
+    "name": "Chuba Cassava Chips Chili 140G",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/1601/Ss9WtFlpdGzqGdQvPf1EjZGPzBwdnHka8CBR15uh.jpeg",
+    "priceCents": 3000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5740900835306",
+    "name": "Lurpak Butter Unsalted 200G",
+    "description": "Creamy unsalted butter, 200g for cooking or spreading.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/1241/zr59OBrRrNgnq6QE69xjEzX8TRgEKk14Tsg2Bmz4.jpeg",
+    "priceCents": 7800,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5711953023262",
+    "name": "Arla Burger Slice Cheddar Taste 200G",
+    "description": "Cheddar-flavored burger cheese slices, 200g pack.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/18948/HpssxK2p5Rr3ICbzDpVLoJevI9Z7fu3myKsudmQq.jpeg",
+    "priceCents": 500,
+    "category": "Food",
+    "unit": [
+      "pcs",
+      "pkt"
+    ]
+  },
+  {
+    "productId": "5711953023408",
+    "name": "Arla Sandwich Slices Original 200G",
+    "description": "Original cheese slices for sandwiches, 200g pack.",
+    "image": "Images/burgur-slice.jpeg",
+    "priceCents": 500,
+    "category": "Food",
+    "unit": [
+      "pcs",
+      "pkt"
+    ]
+  },
+  {
+    "productId": "9501101331037",
+    "name": "Fanta Strawberry 1.25L BTL",
+    "description": "Refreshing strawberry-flavored Fanta, 1.25L bottle.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/205/ENbpbPclnaTF7jrt9VCb2SvhFO3ZY1KDFsCalvD1.jpeg",
+    "priceCents": 3500,
+    "category": "Food & drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9501101330566",
+    "name": "Fanta Strawberry 500ML BTL",
+    "description": "Zesty strawberry Fanta, 500ml bottle.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/352/XERHrNFOxZgmjjYlMJfOheFumVE9lJsXHKiZyxg1.jpeg",
+    "priceCents": 1500,
+    "category": "Food & drinks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6291003191015",
+    "name": "Mayonnaise Alfa 236.5ML",
+    "description": "Creamy mayonnaise, 236.5ml for sandwiches or dips.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/35/pna6klR6qX8DF9QJI28BHEwGFjXBuUQMkgOuMg8J.jpeg",
+    "priceCents": 1500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8003510028818",
+    "name": "Glicemille Lip Balm Moisturizing 5.5ML",
+    "description": "Moisturizing lip balm, 5.5ml for soft lips.",
+    "image": "Images/lip.jpeg",
+    "priceCents": 3000,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8001512205558",
+    "name": "Famy Tissues Three Ply",
+    "description": "Soft three-ply tissues for everyday use.",
+    "image": "Images/famy.jpeg",
+    "priceCents": 250,
+    "category": "Kitchen",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8998866603546",
+    "name": "So Klin Floor Cleaner Purple 450ML",
+    "description": "Purple-scented floor cleaner, 450ml for sparkling floors.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/3849/kHFtFInkB8FRHuFpfJuOL0IVmGlgVI08ZwGoTpAi.jpeg",
+    "priceCents": 2200,
+    "category": "Cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6084012090475",
+    "name": "Kraft Cheese 190G",
+    "description": "Creamy Kraft cheese, 190g for spreads or cooking.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/18944/H0qkrCO97n4wQtJC6t9H1plgEW4iXaA2nDjMtRpr.jpeg",
+    "priceCents": 5500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8901719105555",
+    "name": "Parle Rusk Milk 182G",
+    "description": "Milk-flavored rusks, 182g for tea-time snacking.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/382/YvAk6f2o6eNFcx6atkha6Cr9VI8JBtEnDMGdwMOz.jpeg",
+    "priceCents": 1500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8850157100519",
+    "name": "Jele Beautie Strawberry + Collagen",
+    "description": "Strawberry-flavored jelly drink ",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/44311/S9bqLUHFeamBn9k9RqltFiv3Awr4fPEi71Li1KIQ.png",
+    "priceCents": 1000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8850157102674",
+    "name": "Jele Beautie Lychee + L-Carnitine",
+    "description": "Lychee-flavored jelly drink ",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/44309/Z9sNhnumUQMt3jMacuLeTuksrsUb8r5gvlk9B77B.png",
+    "priceCents": 1000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8850157100526",
+    "name": "Jele Beautie Grape + Vitamin A,C,E",
+    "description": "Grape-flavored jelly drink",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/44307/brgDZytOPPGBfmxOSeWa08QTt1Byj4UomFBpLbjT.png",
+    "priceCents": 1000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8850157100557",
+    "name": "Jele Beautie Blackcurrent + Vitamin C",
+    "description": " jelly drink ",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/42223/Vi9AKqGPPJWVcwKYR8trL8diRvBVR5tZaToImM9p.jpg",
+    "priceCents": 1000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "3003",
+    "name": "Theluli Fai (B)",
+    "description": "Large-sized fried  snack, ",
+    "image": "Images/thel.jpg",
+    "priceCents": 1500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "3002",
+    "name": "Theluli Fai (S)",
+    "description": "Small-sized fried  snack",
+    "image": "Images/thel.jpg",
+    "priceCents": 1000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "3001",
+    "name": "Garadha Kaajaa",
+    "description": "Traditional snack",
+    "image": "Images/kaaja.jpg",
+    "priceCents": 1000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8858829601173",
+    "name": "Imee Cup Noodles Tom Yum 65G",
+    "description": "Spicy tom yum cup noodles, 65g for a quick meal.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/1606/QkbQO7vbWL4816Wgny75nbVg8suGFpGH1qIspBGp.jpeg",
+    "priceCents": 1700,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "014796202197",
+    "name": "Safa Custard Powder 285G",
+    "description": "Custard powder, 285g for creamy desserts.",
+    "image": "Images/custardpowder.jpeg",
+    "priceCents": 2500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8999178840339",
+    "name": "Chuba Cassava Chips BBQ 140G",
+    "description": "BBQ-flavored cassava chips, 140g pack.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/20710/Itarl3tYV6ydsp0vXH45AZ8bGgr4cahfioOweCsi.png",
+    "priceCents": 3000,
+    "category": "Food & chips, snacks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8888101271404",
+    "name": "Chocolate Puff Biscuit 200G",
+    "description": "Chocolate puff biscuits, 200g for a sweet snack.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/345/m3kiaV0fXth5c1XNJGyQiuX6rseGuJsfGrQQ4l1d.jpeg",
+    "priceCents": 1800,
+    "category": "Food & snacks",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8998866803656",
+    "name": "So Klin Purple Liquid Detergent 1L",
+    "description": "Purple-scented liquid detergent,",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/199/dGngxmhoD2eqkDqDKo4zHdDhdqRO5rG0Yq75xPcb.jpeg",
+    "priceCents": 6770,
+    "category": "Cleaning",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8050705430000",
+    "name": "Massimo Croissant Chocolate 50G",
+    "description": "Chocolate-filled  a sweet breakfast.",
+    "image": "Images/massimo-choco.jpeg",
+    "priceCents": 1000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8851613101385",
+    "name": "Aroy D Coconut Milk 500ML",
+    "description": "Coconut milk, 500ml for cooking or desserts.",
+    "image": "Images/array-500.jpeg",
+    "priceCents": 3500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "03431209",
+    "name": "Hershey's Syrup Chocolate 680G",
+    "description": "Chocolate syrup, 680g for desserts or drinks.",
+    "image": "Images/chocolate-syrup.jpeg",
+    "priceCents": 6500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "9556001171627",
+    "name": "Maggi Chili Garlic Sauce 305ML",
+    "description": "Chili and garlic sauce, 305ml for spicy flavoring.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/1451/wcPCn0tnzfrPGZwbObBBDvfK89ufIhvam0aKP0vz.jpeg",
+    "priceCents": 3500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8908004076040",
+    "name": "Parliament Basmati Rice 1KG",
+    "description": "Premium basmati rice, 1kg for smaller portions.",
+    "image": "Images/parliament1.jpeg",
+    "priceCents": 4000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "thoothpick0n",
+    "name": "Kang's ToothPick Bamboo",
+    "description": "Bamboo toothpicks, size not specified for hygiene.",
+    "image": "Images/toothpick.jpeg",
+    "priceCents": 1000,
+    "category": "Kitchen",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6001135009436",
+    "name": "Listerine Mouth Wash Cool Mint 250ML",
+    "description": "Cool mint mouthwash, 250ml for fresh breath.",
+    "image": "Images/mouthwash1.jpeg",
+    "priceCents": 5700,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6001135009474",
+    "name": "Listerine Mouth Wash Fresh Burst 250ML",
+    "description": "Fresh burst mouthwash, 250ml for oral hygiene.",
+    "image": "Images/mouthwash0.jpeg",
+    "priceCents": 5700,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8710908657672",
+    "name": "Dove Baby Nappy Cream Rich Moisture 45G",
+    "description": "Rich moisture nappy cream, 45g for baby skin care.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/10010/8710908657672.jpg",
+    "priceCents": 4500,
+    "category": "Baby",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "tissue--1",
+    "name": "Beautex Wind Pocket Tissue",
+    "description": "Pocket tissue, size not specified for convenience.",
+    "image": "Images/beutex.jpeg",
+    "priceCents": 250,
+    "category": "Kitchen",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "6291003191022",
+    "name": "Mayonnaise Alfa 32oz Big",
+    "description": "Large mayonnaise, 32oz for creamy spreads.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/372/lcnh3NYXR4qk0S9yChIsyKxjsRiP3f4R8JkMBfmg.jpeg",
+    "priceCents": 4500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "10000000",
+    "name": "Hong Thai Inhaler 35G",
+    "description": "Inhaler, 35g for nasal relief.",
+    "image": "Images/hong-thai.jpeg",
+    "priceCents": 5000,
+    "category": "Medicine",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "tiger-ah",
+    "name": "Tiger Balm 10G",
+    "description": "Tiger balm, 10g for muscle and joint relief.",
+    "image": "Images/tiger-bam.jpeg",
+    "priceCents": 4000,
+    "category": "Medicine",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "4987176168405",
+    "name": "Vicks Babyrub 25ML",
+    "description": "Baby rub, 25ml for gentle soothing.",
+    "image": "Images/vicks-baby.jpeg",
+    "priceCents": 4000,
+    "category": "Medicine",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "3326240005351",
+    "name": "ULRIC DE VAREN Mini Sexy 25ML",
+    "description": "Mini sexy fragrance, a bold scent.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/27491/3326240005351.jpg",
+    "priceCents": 7500,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "3326240041793",
+    "name": "ULRIC DE VAREN Mini Beauty 25ML",
+    "description": "",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/27487/3326240041793.jpg",
+    "priceCents": 7500,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "3326240006136",
+    "name": "ULRIC DE VAREN Mini Vanille 25ML",
+    "description": " for a warm scent.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/27492/3326240006136.jpg",
+    "priceCents": 7500,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5060340397975",
+    "name": "Confetti Perfume Sky 100ML",
+    "description": "Sky perfume, 100ml for a fresh scent.",
+    "image": "Images/sky-con.jpeg",
+    "priceCents": 22000,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5060340397951",
+    "name": "Confetti Perfume Eden 100ML",
+    "description": "for a floral scent.",
+    "image": "Images/edan-con.jpeg",
+    "priceCents": 22000,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5060340398446",
+    "name": "Confetti Perfume Soul 100ML",
+    "description": "for a deep scent.",
+    "image": "Images/soul.jpeg",
+    "priceCents": 22000,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "5060340397999",
+    "name": "Confetti Perfume Be Mine 100ML",
+    "description": " for a romantic scent.",
+    "image": "Images/be-mine.jpeg",
+    "priceCents": 22000,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8717163997345",
+    "name": "Dove Deo Original 250ML",
+    "description": "Original deodorant spray, 250ml for long-lasting freshness.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/5502/8717163997345.jpg",
+    "priceCents": 6000,
+    "category": "Cosmetics",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8888192821182",
+    "name": "Hosen Green Peas 397G",
+    "description": "Canned green peas, 397g for cooking or salads.",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/static.ewitypos.com/_catalogue/396/m9jgXD3nLKcY2RfXdW7vgAsncVyZPaXX8DNVtS73.png",
+    "priceCents": 1800,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8888192501688",
+    "name": "Highway Corned Beef 200G",
+    "description": "Canned corned beef, 200g for quick meals.",
+    "image": "Images/corned-beef.jpeg",
+    "priceCents": 5500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "drypers-nb",
+    "name": "Drypers NB Mega (4*80'S) New Packing",
+    "description": "",
+    "image": "Images/drypers-newborn.jpeg",
+    "priceCents": 20000,
+    "category": "Baby",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "chicken-1400g",
+    "name": "Chicken Whole 1400G",
+    "description": "Whole chicken, 1400g for roasting or cooking.",
+    "image": "Images/whole-chicken.jpeg",
+    "priceCents": 9000,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  },
+  {
+    "productId": "8851613101378",
+    "name": "Aroy D Coconut Milk 250ML",
+    "description": "Coconut milk, 250ml for cooking or desserts.",
+    "image": "Images/arrayd-small.jpeg",
+    "priceCents": 2500,
+    "category": "Food",
+    "unit": [
+      "pcs"
+    ]
+  }
+]
